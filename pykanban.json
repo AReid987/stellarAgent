@@ -1,0 +1,200 @@
+{
+    "1": {
+        "Title": "Welcome Task",
+        "Description": "Welcome to kanban-python, I hope this helps your productivity",
+        "Tag": "HI",
+        "Status": "Ready",
+        "Begin_Time": "",
+        "Complete_Time": "",
+        "Duration": 0,
+        "Creation_Date": "",
+        "Due_Date": ""
+    },
+    "2": {
+        "Title": "Fix Fabric",
+        "Description": "receiving an error like `FRED expecting JSON`",
+        "Status": "Ready",
+        "Tag": "DEBUG",
+        "Creation_Date": "2024-12-17 02:58:55",
+        "Due_Date": "",
+        "Begin_Time": "",
+        "Complete_Time": "",
+        "Duration": 0
+    },
+    "3": {
+        "Title": "write a script for `gitingest`",
+        "Description": "write a script to convert repo URL from \"..github...\" to \"...gitingest...\"",
+        "Status": "Ready",
+        "Tag": "SCRAPE",
+        "Creation_Date": "2024-12-17 02:59:51",
+        "Due_Date": "",
+        "Begin_Time": "",
+        "Complete_Time": "",
+        "Duration": 0
+    },
+    "4": {
+        "Title": "Init DSPy",
+        "Description": "Setup and Configure",
+        "Status": "Ready",
+        "Tag": "PROMPTING",
+        "Creation_Date": "2024-12-17 03:00:11",
+        "Due_Date": "",
+        "Begin_Time": "",
+        "Complete_Time": "",
+        "Duration": 0
+    },
+    "5": {
+        "Title": "Init Codecov",
+        "Description": "Setup and Configure",
+        "Status": "Ready",
+        "Tag": "QA",
+        "Creation_Date": "2024-12-17 03:00:32",
+        "Due_Date": "",
+        "Begin_Time": "",
+        "Complete_Time": "",
+        "Duration": 0
+    },
+    "6": {
+        "Title": "Init GitHub Repo / Actions",
+        "Description": "Start it",
+        "Status": "Ready",
+        "Tag": "GITHUB",
+        "Creation_Date": "2024-12-17 03:01:00",
+        "Due_Date": "",
+        "Begin_Time": "",
+        "Complete_Time": "",
+        "Duration": 0
+    },
+    "7": {
+        "Title": "Daytona",
+        "Description": "Peep applicabiluty of Daytona",
+        "Status": "Ready",
+        "Tag": "CONTAINERIZATION",
+        "Creation_Date": "2024-12-17 03:01:23",
+        "Due_Date": "",
+        "Begin_Time": "",
+        "Complete_Time": "",
+        "Duration": 0
+    },
+    "8": {
+        "Title": "Agents are coming!",
+        "Description": "Init Browser Use, LightRAG, Magentic One, Captain Agent, Qwen Agent, Automated AI Researcher",
+        "Status": "Ready",
+        "Tag": "AGENTS",
+        "Creation_Date": "2024-12-17 03:01:43",
+        "Due_Date": "",
+        "Begin_Time": "",
+        "Complete_Time": "",
+        "Duration": 0
+    },
+    "9": {
+        "Title": "Portkey",
+        "Description": "Init Portkey",
+        "Status": "Ready",
+        "Tag": "AI-GATEWAY",
+        "Creation_Date": "2024-12-17 03:02:10",
+        "Due_Date": "",
+        "Begin_Time": "",
+        "Complete_Time": "",
+        "Duration": 0
+    },
+    "10": {
+        "Title": "YouTube Ingest",
+        "Description": "YouTube ingest Pipeline",
+        "Status": "Ready",
+        "Tag": "AUTOMATION",
+        "Creation_Date": "2024-12-17 03:02:40",
+        "Due_Date": "",
+        "Begin_Time": "",
+        "Complete_Time": "",
+        "Duration": 0
+    },
+    "11": {
+        "Title": "Transcribe",
+        "Description": "MLX Whisper, lightning whisper, etc",
+        "Status": "Ready",
+        "Tag": "VOICE",
+        "Creation_Date": "2024-12-17 03:03:03",
+        "Due_Date": "",
+        "Begin_Time": "",
+        "Complete_Time": "",
+        "Duration": 0
+    },
+    "12": {
+        "Title": "Fabric Stitch",
+        "Description": "Fabric stitch and / or REST API",
+        "Status": "Ready",
+        "Tag": "FABRIC",
+        "Creation_Date": "2024-12-17 03:03:24",
+        "Due_Date": "",
+        "Begin_Time": "",
+        "Complete_Time": "",
+        "Duration": 0
+    },
+    "13": {
+        "Title": "Bolt.diy",
+        "Description": "Test Bolt after the updates",
+        "Status": "Ready",
+        "Tag": "AGENT",
+        "Creation_Date": "2024-12-17 03:04:25",
+        "Due_Date": "",
+        "Begin_Time": "",
+        "Complete_Time": "",
+        "Duration": 0
+    },
+    "14": {
+        "Title": "Init MegaLinter, GPT Lint, Biome",
+        "Description": "Setup and Configure",
+        "Status": "Ready",
+        "Tag": "CI/CD",
+        "Creation_Date": "2024-12-17 03:04:53",
+        "Due_Date": "",
+        "Begin_Time": "",
+        "Complete_Time": "",
+        "Duration": 0
+    },
+    "15": {
+        "Title": "Init Husky, DevMoji, Commitizen, Commitlint, Conventional Commits",
+        "Description": "Setup and Configure",
+        "Status": "Ready",
+        "Tag": "CI/CD",
+        "Creation_Date": "2024-12-17 03:05:13",
+        "Due_Date": "",
+        "Begin_Time": "",
+        "Complete_Time": "",
+        "Duration": 0
+    },
+    "16": {
+        "Title": "Compile synthesis of planning docs",
+        "Description": "Requirements Gathering",
+        "Status": "Ready",
+        "Tag": "PM",
+        "Creation_Date": "2024-12-17 03:05:35",
+        "Due_Date": "",
+        "Begin_Time": "",
+        "Complete_Time": "",
+        "Duration": 0
+    },
+    "17": {
+        "Title": "Init Docker",
+        "Description": "Containerization",
+        "Status": "Ready",
+        "Tag": "DOCKER",
+        "Creation_Date": "2024-12-17 03:05:58",
+        "Due_Date": "",
+        "Begin_Time": "",
+        "Complete_Time": "",
+        "Duration": 0
+    },
+    "18": {
+        "Title": "Ballerina",
+        "Description": "assess applicability",
+        "Status": "Ready",
+        "Tag": "BALLERINA",
+        "Creation_Date": "2024-12-17 03:48:19",
+        "Due_Date": "",
+        "Begin_Time": "",
+        "Complete_Time": "",
+        "Duration": 0
+    }
+}
