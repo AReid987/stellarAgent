@@ -1,12 +1,15 @@
 {
-  "name": "stellarAgentRepo",
+  "name": "stellar-agent",
   "private": true,
+  "type": "module",
   "scripts": {
     "commit": "cz c && devmoji -e",
     "build": "turbo build",
     "dev": "turbo dev",
     "lint": "turbo lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "test": "turbo test"
+
   },
   "devDependencies": {
     "devmoji": "^2.3.0",

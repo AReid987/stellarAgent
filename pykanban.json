@@ -3,9 +3,9 @@
         "Title": "Welcome Task",
         "Description": "Welcome to kanban-python, I hope this helps your productivity",
         "Tag": "HI",
-        "Status": "Ready",
+        "Status": "Done",
         "Begin_Time": "",
-        "Complete_Time": "",
+        "Complete_Time": "2024-12-18 11:07:40",
         "Duration": 0,
         "Creation_Date": "",
         "Due_Date": ""
@@ -46,11 +46,11 @@
     "5": {
         "Title": "Init Codecov",
         "Description": "Setup and Configure",
-        "Status": "Ready",
+        "Status": "Doing",
         "Tag": "QA",
         "Creation_Date": "2024-12-17 03:00:32",
         "Due_Date": "",
-        "Begin_Time": "",
+        "Begin_Time": "2024-12-18 11:09:35",
         "Complete_Time": "",
         "Duration": 0
     },
@@ -90,11 +90,11 @@
     "9": {
         "Title": "Portkey",
         "Description": "Init Portkey",
-        "Status": "Ready",
+        "Status": "Doing",
         "Tag": "AI-GATEWAY",
         "Creation_Date": "2024-12-17 03:02:10",
         "Due_Date": "",
-        "Begin_Time": "",
+        "Begin_Time": "2024-12-18 11:10:20",
         "Complete_Time": "",
         "Duration": 0
     },
@@ -194,6 +194,17 @@
         "Creation_Date": "2024-12-17 03:48:19",
         "Due_Date": "",
         "Begin_Time": "",
+        "Complete_Time": "",
+        "Duration": 0
+    },
+    "19": {
+        "Title": "Agent E",
+        "Description": "Implement Agent E",
+        "Status": "Doing",
+        "Tag": "AGENTE",
+        "Creation_Date": "2024-12-18 11:10:42",
+        "Due_Date": "",
+        "Begin_Time": "2024-12-18 11:10:42",
         "Complete_Time": "",
         "Duration": 0
     }

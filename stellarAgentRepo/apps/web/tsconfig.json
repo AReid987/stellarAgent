@@ -1,11 +1,15 @@
 {
-  "extends": "@repo/typescript-config/nextjs.json",
+  "extends": "@stellar-agent/typescript-config/nextjs.json",
   "compilerOptions": {
     "plugins": [
       {
         "name": "next"
       }
-    ]
+    ],
+    "jsx": "preserve",
+    "moduleResolution": "node16",
+    "module": "Node16",
+    "types": ["@testing-library/jest-dom"]
   },
   "include": [
     "**/*.ts",

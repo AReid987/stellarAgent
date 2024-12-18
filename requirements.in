@@ -1,0 +1,8 @@
+open-interpreter
+open-interpreter[server]
+open-interpreter[safe]
+open-interpreter[os]
+opencv-python
+plyer
+pyautogui
+pywinctl
