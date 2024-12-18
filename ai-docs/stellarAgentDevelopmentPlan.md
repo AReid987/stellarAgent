@@ -1,7 +1,6 @@
 # StellarAgent Development Plan
 
 ---
-
 type: Page
 title: StellarAgent Development Plan
 description: null
@@ -77,11 +76,11 @@ coverImage: null
 
 - Integrate with Stellar SDK to communicate with Stellar Blockchain
 
-#### **Develop a user-friendly interface**
+#### 🖥️ **Develop a user-friendly interface**
 
 - Create a simple and intuitive interface for creating and managing custom assets
 
-#### **Implement asset validation and verification**
+#### ✔︎ **Implement asset validation and verification**
 
 - Ensure that created assets comply with Stellar network rules and regulations
 
@@ -93,11 +92,11 @@ coverImage: null
 
 - Real-time updates and notifications for users.
 
-#### **Manage existing wallets and assets**
+#### ₿ **Manage existing wallets and assets**
 
 - Implement wallet and asset management functionalities, including transaction history, balance tracking, and asset validation
 
-#### **Perform transactions and other actions**
+#### ▶️ **Perform transactions and other actions**
 
 - Develop tools to give agents a transaction engine that can execute various actions on the Stellar blockchain, such as sending and receiving assets, claiming assets, and voting
 
@@ -107,7 +106,7 @@ coverImage: null
 
 - User interface design for collaboration between humans and AI agents.
 
-#### **User** **Interface**
+#### 🖥️ **User** **Interface**
 
 - Design an intuitive and user-friendly interface:
 
@@ -117,23 +116,23 @@ coverImage: null
 
     - Implement WebSockets or Server-Sent Events to push real-time updates to users Collaboration modes:
 
-#### **Semi-autonomous**
+#### 🤖 **Semi-autonomous**
 
 - Agents make decisions and execute actions without user input
 
-#### **Manual override**
+#### 🛑 **Manual override**
 
 - Users have full control over wallet and asset management, with Agents providing supportive analytics and insights
 
-#### **Fully autonomous**
+#### 💨 **Fully autonomous**
 
 - Agents provide recommendations, and users can choose to approve or reject actions
 
-#### **Feedback mechanisms**
+#### 🗣️ **Feedback mechanisms**
 
 - Implement feedback mechanisms: Develop a rating system, surveys, or feedback forms to collect user input and improve Agent performance
 
-#### **Agent action monitoring**
+#### 👀 **Agent action monitoring**
 
 - Users can review and approve or reject Agent-proposed actions.
 
@@ -145,7 +144,7 @@ coverImage: null
 
 - Users can collaborate with Agents by setting parameters and approving actions.
 
-#### **Different collaboration modes**
+#### 👥 **Different collaboration modes**
 
 - fully autonomous
 
@@ -187,11 +186,11 @@ coverImage: null
 
   - ensure compliance with Stellar network rules
 
-#### **Manage existing wallets and assets**
+#### 👛 **Manage existing wallets and assets**
 
 - Implement wallet and asset management functionalities, including transaction history, balance tracking, and asset validation
 
-#### **Perform transactions and other actions**
+#### ▶️ **Perform transactions and other actions**
 
 - Develop tools to give agents a transaction engine that can execute various actions on the Stellar blockchain, such as sending and receiving assets, claiming assets, and voting
 
@@ -199,11 +198,11 @@ coverImage: null
 
 #### 🤔 Agent decision-making process
 
-#### **Define rules and logic for Agent decision-making**
+#### ⚖️ **Define rules and logic for Agent decision-making**
 
 - Develop a decision-making framework that takes into account factors such as market trends, user preferences, and risk tolerance
 
-#### **Integrate Agentic Systems**
+#### 🤖 **Integrate Agentic Systems**
 
 - Utilize Agentic Systems (e.g., Agent E, AG2) to improve Agent performance and adapt to changing market conditions
 
@@ -227,11 +226,11 @@ coverImage: null
 
 #### 🗣️ Feedback mechanisms
 
-#### **Implement feedback mechanisms**
+#### 📢 **Implement feedback mechanisms**
 
 - Develop a rating system, surveys, or feedback forms to collect user input and improve Agent performance
 
-#### **Transaction history**
+#### 📜 **Transaction history**
 
 - Maintain a transaction history: Develop a database to store transaction history, and provide users with access to this information
 
