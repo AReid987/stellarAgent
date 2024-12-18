@@ -1208,7 +1208,7 @@ sortedcontainers==2.4.0
     # via trio
 stack-data==0.6.3
     # via ipython
-starlette==0.37.2
+starlette==0.40.0
     # via
     #   fastapi
     #   open-interpreter
