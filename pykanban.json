@@ -46,13 +46,13 @@
     "5": {
         "Title": "Init Codecov",
         "Description": "Setup and Configure",
-        "Status": "Doing",
+        "Status": "Done",
         "Tag": "QA",
         "Creation_Date": "2024-12-17 03:00:32",
         "Due_Date": "",
         "Begin_Time": "2024-12-18 11:09:35",
-        "Complete_Time": "",
-        "Duration": 0
+        "Complete_Time": "2024-12-18 14:17:29",
+        "Duration": 187.9
     },
     "6": {
         "Title": "Init GitHub Repo / Actions",

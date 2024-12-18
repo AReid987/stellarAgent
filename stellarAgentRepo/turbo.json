@@ -23,6 +23,9 @@
     },
     "test": {
       "cache": true
+    },
+    "test:cov": {
+      "cache": true
     }
   }
 }
