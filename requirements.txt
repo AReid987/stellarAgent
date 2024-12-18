@@ -244,7 +244,7 @@ jupyterlab-widgets==3.0.13
     # via ipywidgets
 kiwisolver==1.4.7
     # via matplotlib
-litellm==1.55.3
+litellm==1.55.4
     # via open-interpreter
 markdown-it-py==3.0.0
     # via rich
