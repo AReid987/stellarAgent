@@ -1,26 +1,27 @@
+# StellarAgent Development Plan
+
 ---
+
 type: Page
 title: StellarAgent Development Plan
 description: null
 icon: null
 createdAt: '2024-12-16T19:27:25.089Z'
 creationDate: 2024-12-16 13:27
-modificationDate: 2024-12-16 19:46
+modificationDate: 2024-12-17 02:47
 tags: [Project, Planning, Agent]
 coverImage: null
 ---
 
-# StellarAgent Development Plan
+## 👨‍💻 App Development Plan
 
 ---
-
-## 👨‍💻 App Development Plan
 
 ### **🔭 I. Project Overview**
 
 #### 🪪 App name
 
-- **StellarAgent**
+- **Stellar****Agent**
 
 #### 🏷️ Tagline
 
@@ -28,23 +29,23 @@ coverImage: null
 
 #### 🥅 Goals
 
-- Provide a user-friendly interface 
+- Provide a user-friendly interface
 
 - Enable humans to collaborate with AI Agents
 
 - Implement human-in-the-loop control
 
-- Deploy Agents for: 
+- Deploy Agents for:
 
-    - Managing lobstr.co wallets
+  - Managing lobstr.co wallets
 
-    - Creating and managing custom assets 
+  - Creating and managing custom assets
 
-    - Performing various actions on the Stellar blockchain
+  - Performing various actions on the Stellar blockchain
 
 - Autonomous Wallet Management with AI Agents for the Stellar blockchain
 
-#### 🎯 Target audience 
+#### 🎯 Target audience
 
 - A small group of specific Individuals seeking to leverage the benefits of the Stellar blockchain with the support of AI-powered agents
 
@@ -61,7 +62,6 @@ coverImage: null
 - Create and manage multiple AI Agents, each with its own set of permissions and capabilities.
 
 - Agents can create and manage wallets, assets, and perform transactions on the Stellar blockchain.
-
 
 #### **💶 Wallet Management**
 
@@ -107,21 +107,25 @@ coverImage: null
 
 - User interface design for collaboration between humans and AI agents.
 
-#### **User Interface**
+#### **User** **Interface**
 
-- Design an intuitive and user-friendly interface: Utilize modern front-end frameworks (e.g., React, Next.js, TailwindCSS, Framer Motion) to create a visually appealing and responsive interface
+- Design an intuitive and user-friendly interface:
 
-    - Provide real-time updates: Implement WebSockets or Server-Sent Events to push real-time updates to users Collaboration modes:
+  - Utilize modern front-end frameworks (e.g., React, Next.js, TailwindCSS, Framer Motion) to create a visually appealing and responsive interface
+
+  - Provide real-time updates:
+
+    - Implement WebSockets or Server-Sent Events to push real-time updates to users Collaboration modes:
 
 #### **Semi-autonomous**
 
 - Agents make decisions and execute actions without user input
 
-#### **Manual override** 
+#### **Manual override**
 
 - Users have full control over wallet and asset management, with Agents providing supportive analytics and insights
 
-#### **Fully autonomous** 
+#### **Fully autonomous**
 
 - Agents provide recommendations, and users can choose to approve or reject actions
 
@@ -155,7 +159,7 @@ coverImage: null
 
 - Users receive real-time updates on the status of each action, including successes, failures, and errors.
 
-#### **Implement push notifications** 
+#### **Implement push notifications**
 
 - Utilize push notification services (e.g., Firebase Cloud Messaging, OneSignal) to notify users of important events
 
@@ -167,18 +171,21 @@ coverImage: null
 
 - Integrate with Telegram or create Telegram Bot to provide users the option of receiving Telegram updates and participation in Human in the Loop
 
-
 ### **III. Agent Functionality**
 
 #### 🦾 Agent capabilities
 
 - Create new wallets if necessary
 
-    - Implement Agent with functionality for browser control of lobstr.co API to create new wallets, and ensure proper security measures (e.g., 2-factor authentication, encryption)
+  - Implement Agent with functionality for browser control of lobstr.co API
+
+  - Create new wallets, and ensure proper security measures (e.g., 2-factor authentication, encryption)
 
 - Autonomously create and manage custom assets on the Stellar blockchain
 
-    - Develop a user-friendly interface for creating and managing custom assets, and ensure compliance with Stellar network rules
+  - Develop a user-friendly interface for creating and managing custom assets
+
+  - ensure compliance with Stellar network rules
 
 #### **Manage existing wallets and assets**
 
@@ -229,4 +236,3 @@ coverImage: null
 - Maintain a transaction history: Develop a database to store transaction history, and provide users with access to this information
 
 - Allow users to view and analyze transaction history: Implement data visualization tools (e.g., charts, graphs) to help users understand their transaction history
-
