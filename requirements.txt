@@ -119,7 +119,7 @@ fsspec==2024.10.0
     # via
     #   huggingface-hub
     #   torch
-git-python==1.0.3
+git-python==1.1.1
     # via open-interpreter
 gitdb==4.0.11
     # via gitpython
