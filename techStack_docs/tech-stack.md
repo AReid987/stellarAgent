@@ -105,6 +105,10 @@
 - [GitHub Repo](https://github.com/codecov/codecov-action)
 - [Docs](https://docs.codecov.com/docs/quick-start)
 
+### Renovate
+
+- [GitHub](https://docs.renovatebot.com/)
+
 ## Testing Frameworks
 
 ### Jest
