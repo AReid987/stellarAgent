@@ -8,7 +8,59 @@
 
 #### Kanban Python
 
+- CLI Project Management
 - [Kanban Python GitHub Repo](https://github.com/Zaloog/kanban-python)
+
+### Documentation
+
+#### Obsidian CLI
+
+- [Docs](https://yakitrak.github.io/obsidian-cli-docs/)
+
+## Containerization
+
+### Docker
+
+#### Dive
+
+#### Hadolint
+
+- Dockerfile Linter
+- [GitHub](https://github.com/hadolint/hadolint)
+
+#### Lazy Docker
+
+- TUI for Docker and Docker Compose
+- [GitHub](https://github.com/jesseduffield/lazydocker?tab=readme-ov-file)
+
+#### Slim
+
+- Make container images smaller
+- [GitHub](https://github.com/slimtoolkit/slim)
+
+#### Dive
+
+- TUI for Exploring Docker images, layers and shrinking the size
+- [GitHub](https://github.com/wagoodman/dive)
+
+#### ctop
+
+- Top for Container Metrics
+- [GitHub](https://github.com/bcicen/ctop)
+
+#### Slick
+
+- Deploy containers with Caddy
+- [GitHub](https://github.com/scmmishra/slick-deploy)
+
+## Networking
+
+### Webservers
+
+#### Caddy
+
+- Webserver with automatic HTTPS
+- [GitHub](https://github.com/caddyserver/caddy)
 
 ### Agent Utilities
 
@@ -129,3 +181,7 @@
 ### Open Interpreter
 
 - [Docs](https://docs.openinterpreter.com/getting-started/introduction)
+
+### Fabric AI
+
+- [GitHub](https://github.com/danielmiessler/fabric)

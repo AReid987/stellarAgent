@@ -57,11 +57,11 @@
     "6": {
         "Title": "Init GitHub Repo / Actions",
         "Description": "Start it",
-        "Status": "Ready",
+        "Status": "Doing",
         "Tag": "GITHUB",
         "Creation_Date": "2024-12-17 03:01:00",
         "Due_Date": "",
-        "Begin_Time": "",
+        "Begin_Time": "2024-12-18 14:55:09",
         "Complete_Time": "",
         "Duration": 0
     },
@@ -205,6 +205,17 @@
         "Creation_Date": "2024-12-18 11:10:42",
         "Due_Date": "",
         "Begin_Time": "2024-12-18 11:10:42",
+        "Complete_Time": "",
+        "Duration": 0
+    },
+    "20": {
+        "Title": "Aider",
+        "Description": "add scripts folder with Aider configured for GLHF & Qwen",
+        "Status": "Doing",
+        "Tag": "AIDER",
+        "Creation_Date": "2024-12-18 14:55:54",
+        "Due_Date": "",
+        "Begin_Time": "2024-12-18 14:55:54",
         "Complete_Time": "",
         "Duration": 0
     }

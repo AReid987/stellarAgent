@@ -1,6 +1,7 @@
 # StellarAgent Development Plan
 
 ---
+
 type: Page
 title: StellarAgent Development Plan
 description: null
@@ -10,6 +11,7 @@ creationDate: 2024-12-16 13:27
 modificationDate: 2024-12-17 02:47
 tags: [Project, Planning, Agent]
 coverImage: null
+
 ---
 
 ## 👨‍💻 App Development Plan
@@ -20,7 +22,7 @@ coverImage: null
 
 #### 🪪 App name
 
-- **Stellar****Agent**
+- **Stellar\*\***Agent\*\*
 
 #### 🏷️ Tagline
 
@@ -154,7 +156,7 @@ coverImage: null
 
 - Real-time updates and notifications on ongoing processes.
 
-#### 4.⚡  **Real-time Updates**
+#### 4.⚡ **Real-time Updates**
 
 - Users receive real-time updates on the status of each action, including successes, failures, and errors.
 

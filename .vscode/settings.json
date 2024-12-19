@@ -1,3 +1,7 @@
 {
-	"IBM Cloud Deployable Architecture Builder.disable GHE URI check": true
+  "eslint.workingDirectories": [
+    {
+      "mode": "auto"
+    }
+  ]
 }
