@@ -396,7 +396,7 @@ pydantic==2.10.4
     #   litellm
     #   open-interpreter
     #   openai
-pydantic-core==2.27.1
+pydantic-core==2.27.2
     # via pydantic
 pygetwindow==0.0.9
     # via pyautogui
