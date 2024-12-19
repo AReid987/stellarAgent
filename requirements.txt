@@ -1212,7 +1212,7 @@ starlette==0.40.0
     # via
     #   fastapi
     #   open-interpreter
-sympy==1.13.1
+sympy==1.13.3
     # via torch
 termcolor==2.3.0
     # via yaspin
