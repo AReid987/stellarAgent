@@ -143,7 +143,22 @@
 
 ---
 
-## Agent IDEs
+## Agent IDEs & Webcontainers
+
+### Codesandbox
+
+- [Docs](https://codesandbox.io/p/github/AReid987/stellarAgent/main?workspaceId=ws_DYe9JCDCoiQ756Ya1ettRz)
+- [StellarAgent Sandbox](https://codesandbox.io/p/github/AReid987/stellarAgent/main?import=true&workspaceId=ws_DYe9JCDCoiQ756Ya1ettRz)
+
+### Stackblitz
+
+- [Docs](https://developer.stackblitz.com/)
+- [StellarAgent Stackblitz](https://stackblitz.com/~/github.com/AReid987/stellarAgent?file=techStack_docs/tech-stack.md&view=editor)
+
+### Project IDX
+
+- [Docs](https://lightning.ai/docs/overview/getting-started)
+- [StellarAgent IDX](https://idx.google.com/stellaragent-9530865)
 
 ### Windsurf
 
@@ -160,6 +175,11 @@
 ### Zed
 
 [Docs](https://zed.dev/docs/)
+
+### Lightning.ai
+
+- [Docs](https://lightning.ai/docs/overview/getting-started)
+- [StellarAgent Studio](https://lightning.ai/readmusik/vision-model/studios/stellaragent/code)
 
 ---
 
