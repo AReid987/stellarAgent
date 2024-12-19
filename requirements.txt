@@ -100,7 +100,7 @@ executing==2.1.0
     # via stack-data
 face==24.0.0
     # via glom
-fastapi==0.111.1
+fastapi==0.115.6
     # via open-interpreter
 fastapi-cli==0.0.7
     # via fastapi
