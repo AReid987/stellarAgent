@@ -388,7 +388,7 @@ pyautogui==0.9.54
     # via
     #   -r requirements.in
     #   open-interpreter
-pydantic==2.10.3
+pydantic==2.10.4
     # via
     #   anthropic
     #   fastapi
