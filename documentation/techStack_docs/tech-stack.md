@@ -88,6 +88,7 @@
 
 - Platform for building, sharing, and running containerized applications.
 - [Docker Docs](https://docs.docker.com/)
+- [GenAI Series](https://www.docker.com/blog/tag/genai-docker-labs/)
 
 ### **Hadolint**
 

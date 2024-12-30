@@ -12,4 +12,9 @@
       <img src="https://codecov.io/gh/AReid987/stellarAgent/graphs/sunburst.svg?token=k3vEGa5tka" alt="codecov sunburst graph"/>
     </a>
   </div>
+
+  <div>
+    <h2>Architecture</h2>
+    <a href="documentation/diagrams/Architecture/stellarAgent-c4.eraserdiagram" alt="architecture diagram" />
+  </div>
 </div>

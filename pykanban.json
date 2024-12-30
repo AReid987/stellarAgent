@@ -13,12 +13,12 @@
     "2": {
         "Title": "Fix Fabric",
         "Description": "receiving an error like `FRED expecting JSON`",
-        "Status": "Ready",
+        "Status": "Done",
         "Tag": "DEBUG",
         "Creation_Date": "2024-12-17 02:58:55",
         "Due_Date": "",
         "Begin_Time": "",
-        "Complete_Time": "",
+        "Complete_Time": "2024-12-29 16:29:31",
         "Duration": 0
     },
     "3": {

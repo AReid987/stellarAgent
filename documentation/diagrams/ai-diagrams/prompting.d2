@@ -1,0 +1,79 @@
+# Shapes
+User: User
+User.shape: Person
+
+New: New \n Feature \n or \n Product?
+New.shape: diamond
+
+DSPy: DSPy
+DSPy.shape: document
+
+Reasoning: Reasoning \n Architect
+Reasoning.shape: hexagon
+
+Executor: Executor \n Agent
+Executor.shape: oval
+
+Test: Test \n Case
+Test.shape: page
+
+Write: Write Code
+Write.shape: step
+
+Pass: Tests \n Pass?
+Pass.shape: diamond
+
+Commit: Git Commit
+Commit.shape: step
+
+Actions: GitHub Actions
+Actions.shape: queue
+
+Actions.Lint: Run Lint
+Actions.Build: Run Build
+Actions.Test: Run Test
+
+LintPass: Lint \n Pass?
+LintPass.shape: diamond
+BuildPass: Build \n Pass?
+BuildPass.shape: diamond
+TestPass: Test \n Pass?
+TestPass.shape: diamond
+
+# Sequence
+User -> New: Prompt
+New -> DSPy: No
+DSPy -> Reasoning: Format \n User Prompt
+Reasoning -> Executor: Ustructured \n Output
+Executor -> Test: Convert \n to Structured
+
+Test -> Write -> Pass
+Pass -> Write: No
+Pass -> Commit: Yes
+
+Commit -> Actions: CI/CD
+Actions.Lint -> LintPass
+Actions.Build -> BuildPass
+Actions.Test -> TestPass
+
+LintPass -> Update Documentation: Yes
+LintPass -> Auto Fix: No
+
+TestPass -> Auto Fix: No
+TestPass -> Test Coverage Satisfied?: Yes
+
+Test Coverage Satisfied? -> Update Documentation: Yes
+Update Documentation -> Fireworks
+Test Coverage Satisfied? -> Write Tests: No
+Write Tests -> Actions.Test
+
+BuildPass -> Auto Fix: No
+BuildPass -> Update Documentation: Yes
+Auto Fix -> Update Documentation
+Fireworks -> devLog Site: Publish
+
+New -> Mixture of Experts: Yes
+
+Mixture of Experts -> Market Research -> Artifact 1: Round 1
+Mixture of Experts -> Technical Feasibility -> Artifact 1: Round 1
+Mixture of Experts -> User Experience -> Artifact 1: Round 1

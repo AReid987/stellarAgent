@@ -16,12 +16,10 @@
   "config": {
     "commitizen": {
       "path": "node_modules/cz-git",
-      "czConfig": "./config/cz.config.mjs"
+      "czConfig": "./config/cz.config.cjs"
     }
   },
   "devDependencies": {
-    "cz-git": "^1.11.0",
-    "czg": "^1.11.0",
     "prettier": "^3.4.2",
     "turbo": "^2.3.3",
     "typescript": "5.7.2"
@@ -29,5 +27,16 @@
   "packageManager": "pnpm@9.0.0",
   "engines": {
     "node": ">=18"
+  },
+  "dependencies": {
+    "cz-git": "1.7.1",
+    "czg": "1.10.0",
+    "log-symbols": "^7.0.0",
+    "zx": "^8.3.0"
+  },
+  "pnpm": {
+    "overrides": {
+      "nanoid@<3.3.8": ">=3.3.8"
+    }
   }
 }

@@ -1,0 +1,13 @@
+graph TD
+	QHZT("@stellar-agent/cpu-ops#lint") --> ETTT("___ROOT___")
+	JEGP("@stellar-agent/docs#lint") --> EMLE("@stellar-agent/eslint-config#lint")
+	JEGP("@stellar-agent/docs#lint") --> LRHC("@stellar-agent/typescript-config#lint")
+	JEGP("@stellar-agent/docs#lint") --> GLAO("@stellar-agent/ui#lint")
+	EMLE("@stellar-agent/eslint-config#lint") --> ETTT("___ROOT___")
+	VELR("@stellar-agent/ingester#lint") --> ETTT("___ROOT___")
+	LRHC("@stellar-agent/typescript-config#lint") --> ETTT("___ROOT___")
+	GLAO("@stellar-agent/ui#lint") --> EMLE("@stellar-agent/eslint-config#lint")
+	GLAO("@stellar-agent/ui#lint") --> LRHC("@stellar-agent/typescript-config#lint")
+	TXWC("@stellar-agent/web#lint") --> EMLE("@stellar-agent/eslint-config#lint")
+	TXWC("@stellar-agent/web#lint") --> LRHC("@stellar-agent/typescript-config#lint")
+	TXWC("@stellar-agent/web#lint") --> GLAO("@stellar-agent/ui#lint")

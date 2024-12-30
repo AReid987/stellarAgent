@@ -3,5 +3,7 @@
     {
       "mode": "auto"
     }
-  ]
+  ],
+  "editor.acceptSuggestionOnEnter": "on",
+  "IBM Cloud Deployable Architecture Builder.disable GHE URI check": true
 }
