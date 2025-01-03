@@ -195,7 +195,7 @@ idna==3.10
     #   requests
     #   trio
     #   yarl
-importlib-metadata==7.1.0
+importlib-metadata==7.2.1
     # via
     #   litellm
     #   opentelemetry-api
