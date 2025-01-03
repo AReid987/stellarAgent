@@ -349,6 +349,10 @@
 - Unified API gateway for multiple AI models and providers.
 - [Docs](https://openrouter.ai/docs)
 
+### **Opik**
+
+#### Description
+
 ### **Posthog**
 
 #### Description
@@ -356,6 +360,14 @@
 - Open-source product analytics platform.
 - [Docs](https://posthog.com/)
 
+### **Trigger.dev**
+
+#### Description
+
+- Trigger.dev v3 makes it easy to write reliable long-running tasks without timeouts.
+
+
+- [Docs](https://trigger.dev/docs/introduction)
 ==================================
 
 ## 🛰️ Inference Providers
@@ -551,6 +563,10 @@
 
 - Framework for building and deploying AI-powered applications.
 - [GitHub](https://github.com/danielmiessler/fabric)
+
+### Pieces for Developers
+
+####
 
 ==================================
 

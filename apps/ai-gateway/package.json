@@ -4,6 +4,14 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "test": ""
+    "test": "",
+    "dev:trigger": "pnpm dlx trigger.dev@latest dev",
+    "dev": "python -m uvicorn main:app --reload"
+  },
+  "dependencies": {
+    "@trigger.dev/sdk": "^3.3.7"
+  },
+  "devDependencies": {
+    "@trigger.dev/build": "^3.3.7"
   }
 }

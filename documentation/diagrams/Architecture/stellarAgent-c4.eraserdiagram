@@ -1,66 +1,34 @@
 cloud-architecture-diagram
 
-System Context [icon: computer] {
-  Frontend [icon: react] {
-    Edge Models [icon: cpu]
-    Transformers.js [icon: javascript]
-    Next.js [icon: react]
-    TailwindCSS [icon: css3]
-    Framer Motion [icon: framer]
-    Spline [icon: circle]
-  }
-
-  Backend [icon: python] {
-    FastAPI [icon: python]
-
-    Agentic Systems [icon: ai]
-  }
-
-  Database [icon: database] {
-    PostgreSQL [icon: postgresql]
-    Neon [icon: cloud]
-    Supabase [icon: supabase]
-  }
-
-  Real-time Features [icon: realtime] {
-    WebSockets [icon: socket-io]
-    Push Notifications [icon: bell]
-  }
-
-  Security [icon: lock] {
-    "JWT/OAuth" [icon: key]
-    Encryption [icon: shield]
-    Two-Factor Authentication [icon: lock]
-  }
-
-  External Services [icon: cloud] {
-    Stellar SDK [icon: satellite]
-    lobstr.co API [icon: api]
-    Push Notification Services [icon: bell]
-    Telegram Bot [icon: telegram]
-  }
-}
-Deployment [icon: vercel] {
-    DevContainer Staging [icon: container] {
-      Turborepo Staging [icon: code] {
-        DockerStaging [icon: docker]
-      }
-      Vercel [icon: vercel]
-    }
-    DevContainer Production [icon: container] {
-      Turborepo Prod [icon: code] {
-        DockerProd [icon: docker]
-      }
-      Cloudflare [icon: cloudflare]
-    }
+Frontend [icon: react] {
+  Edge Models [icon: cpu]
+  Transformers.js [icon: javascript]
+  Next.js [icon: react]
+  TailwindCSS [icon: css3]
+  Framer Motion [icon: framer]
+  Spline [icon: circle]
 }
 
-// Connections
-Frontend > Backend: API calls
-Backend > Database: data queries
-Backend > Real-time Features: updates
-Backend > Security: secure transactions
-Backend > External Services: blockchain interactions
+VPC Subnet [icon: aws-vpc] {
+  Main Server {
+    Server [icon: aws-ec2]
+    Data [icon: aws-rds]
+  }
 
-DevContainer Staging > DevContainer Production
-System Context > Deployment: CI CD Pipeline
+  Queue [icon: aws-auto-scaling]
+
+  Compute Nodes [color: red] {
+    Worker1 [icon: aws-ec2]
+    Worker2 [icon: aws-ec2]
+    Worker3 [icon: aws-ec2]
+  }
+}
+
+Analytics [icon: aws-redshift]
+
+// Define connections
+API gateway > Lambda > Server > Data
+Server > Queue
+Queue > Worker1, Worker2, Worker3
+S3 < Data
+Compute Nodes > Analytics

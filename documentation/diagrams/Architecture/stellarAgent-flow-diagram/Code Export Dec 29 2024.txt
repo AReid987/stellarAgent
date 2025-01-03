@@ -1,0 +1,47 @@
+// Flowchart for StellarAgent PRD
+
+title StellarAgent PRD Flowchart
+
+// User Journey 1: Wallet Creation
+User Logs In [shape: oval, icon: log-in] > Selects "Create Wallet" [icon: wallet]
+Selects "Create Wallet" > AI Guides Wallet Creation [icon: robot]
+AI Guides Wallet Creation > Wallet Created [shape: oval, icon: check-square]
+
+// User Journey 2: Asset Management
+User Accesses Dashboard [shape: oval, icon: grid] > Selects "Create Asset" [icon: plus-circle]
+Selects "Create Asset" > AI Assists Asset Definition [icon: robot]
+AI Assists Asset Definition > Asset Created [shape: oval, icon: check-square]
+
+// Scenario 1: Collaborative Wallet Management
+User Collaborates with AI [shape: oval, icon: users] > Manages Multiple Wallets [icon: wallet]
+Manages Multiple Wallets > Receives Real-Time Updates [icon: bell]
+
+// Scenario 2: Autonomous Asset Creation
+AI Autonomously Creates Asset [shape: oval, icon: robot] > Manages Custom Assets [icon: settings]
+
+// Functional Requirements: Wallet Management
+Create Wallet [icon: wallet] > AI Guides Process [icon: robot]
+Manage Wallets [icon: wallet] > View Balances [icon: eye]
+View Balances > Manage Settings [icon: settings]
+
+// Functional Requirements: Asset Management
+Create Asset [icon: plus-circle] > AI Defines Parameters [icon: robot]
+Manage Assets [icon: settings] > View Asset Details [icon: eye]
+
+// Functional Requirements: Collaboration
+Collaborate with AI [icon: users] > Receive Insights [icon: lightbulb]
+
+// Functional Requirements: Security
+Enable 2FA [icon: lock] > Configure 2FA [icon: settings]
+
+// Testing & Measurement
+Conduct AI Testing [shape: oval, icon: flask] > Evaluate Agent Strategies [icon: bar-chart]
+Evaluate Agent Strategies > Monitor Performance [icon: activity]
+
+// Risks & Mitigations
+Model Bias [shape: oval, icon: alert-triangle] > Regular Audits [icon: check-circle]
+Security Breaches [icon: shield] > Implement Encryption [icon: lock]
+
+// GTM/Rollout Plan
+Phase 1: Development [shape: oval, icon: code] > Phase 2: Beta Launch [icon: rocket]
+Phase 2: Beta Launch > Phase 3: Full Launch [icon: megaphone]
