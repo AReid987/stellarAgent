@@ -1,0 +1,20 @@
+{
+    "name": "eslint-config Dev Container",
+    "dockerComposeFile": ["../docker-compose.yml"],
+    "service": "eslint-config",
+    "workspaceFolder": "/workspace/packages/eslint-config",
+    "settings": {
+        "terminal.integrated.defaultProfile.linux": "zsh"
+    },
+    "extensions": [
+        "esbenp.prettier-vscode",
+        "dbaeumer.vscode-eslint",
+        "ms-vscode-remote.remote-containers"
+    ],
+    "remoteUser": "vscode",
+    "build": {
+        "dockerfile": "../Dockerfile",
+        "context": "../"
+    },
+    "postCreateCommand": "pnpm install"
+}

@@ -1,2 +1,3 @@
 #!/bin/bash
-aider --
+
+aider

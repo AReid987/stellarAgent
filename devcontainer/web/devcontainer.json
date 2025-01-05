@@ -1,0 +1,21 @@
+{
+    "name": "web Dev Container",
+    "dockerComposeFile": ["../docker-compose.yml"],
+    "service": "web",
+    "workspaceFolder": "/workspace/apps/web",
+    "settings": {
+        "terminal.integrated.defaultProfile.linux": "zsh"
+    },
+    "extensions": [
+        "esbenp.prettier-vscode",
+        "dbaeumer.vscode-eslint",
+        "ms-vscode-remote.remote-containers"
+    ],
+    "forwardPorts": [3000],
+    "remoteUser": "vscode",
+    "build": {
+        "dockerfile": "../Dockerfile",
+        "context": "../"
+    },
+    "postCreateCommand": "pnpm install"
+}

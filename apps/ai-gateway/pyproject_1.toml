@@ -2,12 +2,16 @@
 dependencies = [
     "portkey_ai",
     "python_dotenv",
-    "fastapi",
+    "fastapi[standard]",
     "uvicorn",
     "stellar-sdk",
+    "aider",
+    "pydantic>=2.10.4",
 ]
 name = "ai-gateway"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
+[project.scripts]
+ai-gateway = "ai-gateway:main"

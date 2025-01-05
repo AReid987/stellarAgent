@@ -1,0 +1,23 @@
+import os
+from portkey import Portkey
+from dotenv import load_dotenv
+load_dotenv()
+class PortkeyClient:
+    def __init__(self):
+        self.portkey = Portkey(
+                api_key = os.getenv("PORTKEY_API_KEY"),
+                config = os.getenv("PORTKEY_CONFIG")
+            )
+    def chat_completion(self, messages, model_name=None):
+        response = self.portkey.chat.completions.create(
+            messages = messages,
+            model = model_name, #Optional model name
+        )
+        return response.choices[0].message.content
+portkey_client = PortkeyClient()
+if __name__ == "__main__":
+    messages = [
+            {"role": "user", "content": "Say hello."},
+    ]
+    chat_response= portkey_client.chat_completion(messages)
+    print(chat_response)

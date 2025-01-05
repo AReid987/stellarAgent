@@ -1,0 +1,20 @@
+{
+    "name": "agent-api Dev Container",
+    "dockerComposeFile": ["../docker-compose.yml"],
+    "service": "agent-api",
+    "workspaceFolder": "/workspace/packages/agent-api",
+    "settings": {
+        "python.pythonPath": "/usr/local/bin/python",
+        "python.analysis.typeCheckingMode": "basic"
+    },
+    "extensions": [
+        "ms-python.python",
+        "ms-python.vscode-pylance"
+    ],
+    "remoteUser": "vscode",
+    "build": {
+        "dockerfile": "../Dockerfile",
+        "context": "../"
+    },
+    "postCreateCommand": "pip install -r requirements.txt"
+}

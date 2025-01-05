@@ -1,0 +1,10 @@
+{
+  "name": "@stellar-agent/stellar-rpc",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "TODO: Write Test"
+  },
+  "devDependencies": {
+    "@stellar/stellar-sdk": "^13.1.0"
+  }
+}

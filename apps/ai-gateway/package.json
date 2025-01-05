@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "test": "",
+    "test": "echo \"TODO: no test specified\" && exit 1",
     "dev:trigger": "pnpm dlx trigger.dev@latest dev",
     "dev": "python -m uvicorn main:app --reload"
   },

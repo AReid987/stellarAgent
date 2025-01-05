@@ -1,7 +1,0 @@
-{
-  "name": "@stellar-agent/garak",
-  "version": "1.0.0",
-  "scripts": {
-    "test": ""
-  }
-}

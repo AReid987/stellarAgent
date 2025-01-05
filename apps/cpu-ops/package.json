@@ -1,7 +1,0 @@
-{
-  "name": "@stellar-agent/cpu-ops",
-  "scripts": {
-    "cpu-ops": "interpreter --server -y",
-    "test": ""
-  }
-}
