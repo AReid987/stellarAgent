@@ -1287,7 +1287,7 @@ soupsieve==2.6
     #   beautifulsoup4
 stack-data==0.6.3
     # via ipython
-starlette==0.37.2
+starlette==0.40.0
     # via
     #   fastapi
     #   open-interpreter
