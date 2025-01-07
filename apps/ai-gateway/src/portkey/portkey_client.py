@@ -1,6 +1,8 @@
 import os
-from portkey import Portkey
+
 from dotenv import load_dotenv
+from portkey import Portkey
+
 load_dotenv()
 class PortkeyClient:
     def __init__(self):
