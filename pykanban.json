@@ -154,13 +154,13 @@
         "Duration": 0
     },
     "15": {
-        "Title": "Init Husky, DevMoji, Commitizen, Commitlint, Conventional Commits",
+        "Title": "Finish czg, Lefthook, Commitlint, Lint-Staged",
         "Description": "Setup and Configure",
-        "Status": "Ready",
+        "Status": "Doing",
         "Tag": "CI/CD",
         "Creation_Date": "2024-12-17 03:05:13",
         "Due_Date": "",
-        "Begin_Time": "",
+        "Begin_Time": "2025-01-11 13:16:06",
         "Complete_Time": "",
         "Duration": 0
     },
@@ -178,12 +178,12 @@
     "17": {
         "Title": "Init Docker",
         "Description": "Containerization",
-        "Status": "Ready",
+        "Status": "Done",
         "Tag": "DOCKER",
         "Creation_Date": "2024-12-17 03:05:58",
         "Due_Date": "",
         "Begin_Time": "",
-        "Complete_Time": "",
+        "Complete_Time": "2025-01-11 13:09:11",
         "Duration": 0
     },
     "18": {
@@ -200,24 +200,24 @@
     "19": {
         "Title": "Agent E",
         "Description": "Implement Agent E",
-        "Status": "Doing",
+        "Status": "Ready",
         "Tag": "AGENTE",
         "Creation_Date": "2024-12-18 11:10:42",
         "Due_Date": "",
         "Begin_Time": "2024-12-18 11:10:42",
-        "Complete_Time": "",
-        "Duration": 0
+        "Complete_Time": "2025-01-11 13:06:05",
+        "Duration": 34675.38
     },
     "20": {
         "Title": "Aider",
         "Description": "add scripts folder with Aider configured for GLHF & Qwen",
-        "Status": "Doing",
+        "Status": "Ready",
         "Tag": "AIDER",
         "Creation_Date": "2024-12-18 14:55:54",
         "Due_Date": "",
         "Begin_Time": "2024-12-18 14:55:54",
-        "Complete_Time": "",
-        "Duration": 0
+        "Complete_Time": "2025-01-11 13:06:16",
+        "Duration": 34450.37
     },
     "21": {
         "Title": "Devcontainer",
@@ -227,6 +227,72 @@
         "Creation_Date": "2024-12-19 05:49:55",
         "Due_Date": "",
         "Begin_Time": "",
+        "Complete_Time": "",
+        "Duration": 0
+    },
+    "22": {
+        "Title": "tmux and/or zellij",
+        "Description": "figure out how to use them and if they are useful to me",
+        "Status": "Ready",
+        "Tag": "MULTIPLEXER",
+        "Creation_Date": "2025-01-11 13:02:57",
+        "Due_Date": "",
+        "Begin_Time": "",
+        "Complete_Time": "",
+        "Duration": 0
+    },
+    "23": {
+        "Title": "Oh My Posh",
+        "Description": "Finish installing",
+        "Status": "Doing",
+        "Tag": "ZSH PROMPT",
+        "Creation_Date": "2025-01-11 13:03:31",
+        "Due_Date": "",
+        "Begin_Time": "2025-01-11 13:08:57",
+        "Complete_Time": "",
+        "Duration": 0
+    },
+    "24": {
+        "Title": "Tiny-fication of Docker images",
+        "Description": "Initialize a repeatable sequence to minify docker images",
+        "Status": "Doing",
+        "Tag": "DOCKER",
+        "Creation_Date": "2025-01-11 13:04:37",
+        "Due_Date": "",
+        "Begin_Time": "2025-01-11 13:09:34",
+        "Complete_Time": "",
+        "Duration": 0
+    },
+    "25": {
+        "Title": "AI Gateway TUI",
+        "Description": "Create a TUI for the AI Gateway",
+        "Status": "Doing",
+        "Tag": "TUI",
+        "Creation_Date": "2025-01-11 13:05:30",
+        "Due_Date": "",
+        "Begin_Time": "2025-01-11 13:16:37",
+        "Complete_Time": "",
+        "Duration": 0
+    },
+    "26": {
+        "Title": "Not Diamond",
+        "Description": "Install and Configure",
+        "Status": "Doing",
+        "Tag": "ROUTER",
+        "Creation_Date": "2025-01-11 13:06:55",
+        "Due_Date": "",
+        "Begin_Time": "2025-01-11 13:14:01",
+        "Complete_Time": "",
+        "Duration": 0
+    },
+    "27": {
+        "Title": "DSPy",
+        "Description": "Learn, Install, Configure",
+        "Status": "Doing",
+        "Tag": "PROMPTENGINEERING",
+        "Creation_Date": "2025-01-11 13:08:16",
+        "Due_Date": "",
+        "Begin_Time": "2025-01-11 13:14:20",
         "Complete_Time": "",
         "Duration": 0
     }

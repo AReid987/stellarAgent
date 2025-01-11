@@ -1,0 +1,13 @@
+FROM ai-gateway-ai-gateway:latest
+
+USER root
+
+RUN apk add --no-cache --virtual .build-deps gcc libc-dev musl-dev \
+	&& wget https://github.com/wagoodman/dive/releases/download/v0.11.0/dive_0.11.0_linux_arm64.tar.gz \
+	&& tar -xvzf dive_0.11.0_linux_arm64.tar.gz -C /usr/local/bin \
+	&& rm dive_0.11.0_linux_arm64.tar.gz \
+	&& apk del .build-deps
+
+USER appuser
+
+CMD ["dive"]

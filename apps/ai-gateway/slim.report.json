@@ -1,0 +1,120 @@
+{
+  "version": "1.0",
+  "engine": "darwin/arm64|Transformer|1.40.11|latest|latest",
+  "containerized": false,
+  "host_distro": {
+    "name": "",
+    "version": "",
+    "display_name": "other"
+  },
+  "type": "lint",
+  "state": "done",
+  "target_type": "dockerfile",
+  "target_reference": "Dockerfile",
+  "hits_count": 3,
+  "nohits_count": 22,
+  "errors_count": 0,
+  "hits": {
+    "ID.20006": {
+      "source": {
+        "id": "ID.20006",
+        "name": "Stage from latest tag"
+      },
+      "message": "Stage from latest tag in Dockerfile",
+      "matches": [
+        {
+          "stage": {
+            "index": 0,
+            "start_line": 10,
+            "end_line": 51,
+            "name": "base",
+            "parent": {
+              "name": "python"
+            }
+          },
+          "message": "Stage: index=0 name='base' start=10 end=51 parent='python'"
+        }
+      ]
+    },
+    "ID.20012": {
+      "source": {
+        "id": "ID.20012",
+        "name": "ENTRYPOINT or CMD in shell form"
+      },
+      "message": "Instruction in shell form",
+      "matches": [
+        {
+          "stage": {
+            "index": 0,
+            "start_line": 10,
+            "end_line": 51,
+            "name": "base",
+            "parent": {
+              "name": "python"
+            }
+          },
+          "instruction": {
+            "start_index": 11,
+            "stage_index": 10,
+            "stage_id": 0,
+            "raw_lines": null,
+            "start_line": 51,
+            "end_line": 51,
+            "name": "cmd",
+            "args": [
+              "uvicorn main:app --host=0.0.0.0 --port=8000"
+            ],
+            "args_raw": "uvicorn main:app --host=0.0.0.0 --port=8000",
+            "is_json": false,
+            "is_valid": true
+          },
+          "message": "Instruction: start=51 end=51 name='cmd' global_index=11 stage_id=0 stage_index=10"
+        }
+      ]
+    },
+    "ID.20019": {
+      "source": {
+        "id": "ID.20019",
+        "name": "Unnecessary Layer"
+      },
+      "message": "RUN instruction will result in unnecessary layer",
+      "matches": [
+        {
+          "stage": {
+            "index": 0,
+            "start_line": 10,
+            "end_line": 51,
+            "name": "base",
+            "parent": {
+              "name": "python"
+            }
+          },
+          "instruction": {
+            "start_index": 7,
+            "stage_index": 6,
+            "stage_id": 0,
+            "raw_lines": [
+              "",
+              "# Expose the port that the application listens on.",
+              "EXPOSE 8000"
+            ],
+            "start_line": 37,
+            "end_line": 39,
+            "name": "run",
+            "flags": [
+              "--mount=type=cache,target=/root/.cache/pip",
+              "--mount=type=bind,source=requirements.txt,target=requirements.txt"
+            ],
+            "args": [
+              "python -m pip install -r requirements.txt"
+            ],
+            "args_raw": "python -m pip install -r requirements.txt",
+            "is_json": false,
+            "is_valid": true
+          },
+          "message": "Instruction: start=37 end=39 global_index=7 stage_id=0 stage_index=6 prev_start=24 prev_end=31 prev_global_index=6 prev_stage_index=5"
+        }
+      ]
+    }
+  }
+}
