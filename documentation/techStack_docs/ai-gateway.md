@@ -57,20 +57,33 @@
 - Ensure that the data is not exposed to unauthorized parties
 - Encrypt data in transit and at rest
 
-## Integration
+## Integrations
+
+### DSPy
+
+= Prompts as Code
+- Prompt Optimization via compiled modules
+- Caching
+- Evaluations & Benchmarking
 
 ### Portkey
 
 - Unified API & Entry Point
 - AI Gateway with guardrails
+- Prompt Templating and Partials
+- LLM Observability
+- Fallbacks / Retries
+- Load Balancing
+- Caching
 
 ### Not Diamond
 
-- Router & Model Gateway
+- Intelligent Model Router
 
 ### Open Router
 
 - Dynamic Routing
+- Model Cost Optimization
 
 ### Opik
 
@@ -88,4 +101,25 @@
 
 - Tracing & Evaluation
 
+### Posthog
+
+- Product Analytics
+- Web Analytics
+- Data Warehouse
+- Session Replay
+- Feature Flags
+- Experiments
+- Surveys
+
 ### Inference Providers
+
+- Gemini 2
+- Mistral
+- Open Router
+- Cerebras
+- Sambanova
+- Groq
+- Together AI
+- X AI
+- Huggingface Serverless API
+- GitHub Models API

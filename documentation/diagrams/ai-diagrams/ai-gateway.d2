@@ -1,0 +1,33 @@
+User: {
+	shape: person
+}
+NGrok: NGrok {
+	shape: rectangle
+}
+
+FastAPI: {
+	shape: rectangle
+}
+
+Portkey: {
+  shape: cloud
+}
+
+NotDiamond: Not Diamond {
+	shape: cloud
+}
+
+Cache: {
+	shape: diamond
+}
+LLM: LLM Provider {
+	shape: cloud
+}
+
+User -> NGrok: Sends Prompt
+Ngrok -> FastAPI
+FastAPI -> Portkey
+Portkey -> Cache: Cached?
+Cache -> FastAPI: Yes
+Cache -> NotDiamond: No
+NotDiamond -> LLM: selects best model

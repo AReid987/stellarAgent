@@ -1,6 +1,97 @@
+Information Flow: |md
+
+  # Information Flow
+
+  ## Sequence
+
+  1. User prompt →
+  2. DSPy →
+  3. FastAPI Gateway →
+  4. Aider →
+  5. Portkey →
+  6. Not Diamond
+  7. LLM Provider →
+  8. Response
+
+| {
+  near: top-center
+}
+
 # Shapes
-User: User
-User.shape: Person
+
+Users {
+  style: {
+		fill: transparent
+	}
+	MobileUser: {
+		style: {
+			fill: transparent
+		}
+
+		MUser: User {
+			shape: Person
+		}
+
+		Mobile: {
+			shape: image
+			icon: https://icons.terrastruct.com/tech%2F052-smartphone-3.svg
+		}
+
+		MUser -> Mobile
+	}
+
+TabletUser: {
+	style: {
+		fill: transparent
+  }
+
+	TUser: User {
+		shape: Person
+	}
+
+	Tablet: {
+		shape: image
+		icon: https://icons.terrastruct.com/tech%2F079-tablet-1.svg
+	}
+
+	TUser -> Tablet
+}
+DesktopUser: {
+	style: {
+		fill: transparent
+	}
+
+  DUser: User {
+		shape: Person
+	}
+
+	Desktop: {
+		shape: image
+		icon: https://icons.terrastruct.com/tech%2Fdesktop.svg
+	}
+
+	DUser -> Desktop
+}
+  LaptopUser: {
+	  style: {
+		  fill: transparent
+	}
+
+	LUser: User {
+		shape: Person
+	}
+
+	Laptop: {
+		shape: image
+		icon: https://icons.terrastruct.com/tech%2Flaptop.svg
+	}
+
+	  LUser -> Laptop
+  }
+}
+
+Prompt: Start
+Prompt.shape: circle
 
 New: New \n Feature \n or \n Product?
 New.shape: diamond
@@ -8,8 +99,11 @@ New.shape: diamond
 DSPy: DSPy
 DSPy.shape: document
 
-Reasoning: Reasoning \n Architect
-Reasoning.shape: hexagon
+Reasoning: {
+  Reasoning \n Architect
+  shape: hexagon
+  icon: ../icons/architect.svg
+}
 
 Executor: Executor \n Agent
 Executor.shape: oval
@@ -41,7 +135,12 @@ TestPass: Test \n Pass?
 TestPass.shape: diamond
 
 # Sequence
-User -> New: Prompt
+Users.MobileUser -> Prompt: Start
+Users.TabletUser -> Prompt: Start
+Users.DesktopUser -> Prompt: Start
+Users.LaptopUser -> Prompt: Start
+
+Prompt -> New: Request
 New -> DSPy: No
 DSPy -> Reasoning: Format \n User Prompt
 Reasoning -> Executor: Ustructured \n Output

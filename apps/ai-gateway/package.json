@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"TODO: no test specified\" && exit 1",
     "dev:trigger": "pnpm dlx trigger.dev@latest dev",
-    "dev": "python -m uvicorn main:app --reload"
+    "dev": "fastapi dev main.py"
   },
   "dependencies": {
     "@trigger.dev/sdk": "^3.3.7"
