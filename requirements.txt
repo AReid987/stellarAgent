@@ -250,7 +250,7 @@ janus==1.2.0
     # via open-interpreter
 jedi==0.19.2
     # via ipython
-jinja2==3.1.4
+jinja2==3.1.5
     # via
     #   aider-chat
     #   fastapi
