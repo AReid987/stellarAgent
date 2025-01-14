@@ -1,6 +1,5 @@
 import sys
 import os
-sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
@@ -47,20 +46,23 @@ async def create_completion(request: PromptRequest):
         
         # Get completion from Portkey client.
         # Portkey will handle caching, fallbacks, and retries based on its configuration.
-        response = portkey_client.chat_completion(
+        response, from_cache = portkey_client.chat_completion(
             messages=messages,
             model_name=request.model,  # Portkey can use this for routing if configured
             config_id=request.config,
             metadata=request.metadata,
             span_id=request.span_id,
-            span_name=request.span_name
+            span_name=request.span_name,
         )
+
+        if from_cache:
+            # Return the cached response
+            return {"choices": [{"message": {"role": "assistant", "content": response}}]}
+        else:
+            # Logic to call Not Diamond (replace with actual Not Diamond client call)
+            # For now, let's just return a placeholder response
+            return {"choices": [{"message": {"role": "assistant", "content": f"Response from Not Diamond for prompt: {request.prompt}"}}]}
         # Return the response in a standardized format
-        return {
-            "choices": [
-                {"message": {"role": "assistant", "content": response}}
-            ]
-        }
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
