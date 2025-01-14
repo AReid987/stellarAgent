@@ -13,6 +13,9 @@ app = FastAPI(title="AI Gateway")
 class PromptRequest(BaseModel):
     prompt: str
     model: str = None  # Optional model name
+    trace_id: str = None
+    span_id: str = None
+    span_name: str = None
 
 @app.get("/")
 async def read_root():
@@ -44,7 +47,10 @@ async def create_completion(request: PromptRequest):
         # Portkey will handle caching, fallbacks, and retries based on its configuration.
         response = portkey_client.chat_completion(
             messages=messages,
-            model_name=request.model  # Portkey can use this for routing if configured
+            model_name=request.model,  # Portkey can use this for routing if configured
+            trace_id=request.trace_id,
+            span_id=request.span_id,
+            span_name=request.span_name
         )
         # Return the response in a standardized format
         return {
