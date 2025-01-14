@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "test": "pytest",
+    "lint": "echo 'TODO: install GPTLint' && exit 1",
     "dev:trigger": "pnpm dlx trigger.dev@latest dev",
     "dev": "fastapi dev main.py"
   },

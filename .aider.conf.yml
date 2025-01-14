@@ -94,7 +94,7 @@ lint: true
 
 ## Specify lint commands to run for different languages, eg: "python: flake8 --select=..." (can be used multiple times)
 
-lint-cmd: pnpm lint
+# lint-cmd: pnpm lint
 
 ## Specify multiple values like this:
 
@@ -110,7 +110,7 @@ auto-lint: true
 #test-cmd: pnpm test
 
 ## Enable/disable automatic testing after changes (default: False)
-#auto-test: true
+auto-test: true
 
 ## Run tests, fix problems found and then exit
 #test: true
@@ -119,7 +119,7 @@ auto-lint: true
 # Modes:
 
 ## Run aider in your browser (default: False)
-#gui: false
+gui: false
 
 ## Enable automatic copy/paste of chat between aider and web UI (default: False)
 #copy-paste: false
@@ -143,5 +143,5 @@ auto-lint: true
 #  - zzz
 
 ## Specify which editor to use for the /editor command
-editor: zed --wait
+editor: windsurf --wait
 
