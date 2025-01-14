@@ -63,6 +63,7 @@ async def create_completion(request: PromptRequest):
 def main():
     """Print a greeting message."""
     print("AI Gateway initialized with Portkey client!")
+    # To lint this package, run: pnpm lint --filter=ai-gateway
 
 if __name__ == "__main__":
     main()
