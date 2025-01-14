@@ -1,3 +1,6 @@
+[build-system]
+requires = ["setuptools>=45", "setuptools_scm>=6.2"]
+build-backend = "setuptools.build_meta"
 [project]
 dependencies = [
     "portkey_ai",
@@ -8,11 +11,10 @@ dependencies = [
     "aider",
     "pydantic>=2.10.4",
     "posthog>=3.7.5",
+    "pytest",
 ]
 name = "ai-gateway"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
-[project.scripts]
-ai-gateway = "ai-gateway:main"

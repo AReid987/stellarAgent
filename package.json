@@ -22,6 +22,7 @@
   "devDependencies": {
     "@codesandbox/sdk": "^0.0.10",
     "gptlint": "^1.6.0",
+    "lefthook": "^1.10.3",
     "prettier": "^3.4.2",
     "turbo": "^2.3.3",
     "typescript": "5.7.2"
@@ -33,6 +34,7 @@
   "dependencies": {
     "cz-git": "1.7.1",
     "czg": "1.10.0",
+    "lint-staged": "^15.3.0",
     "log-symbols": "^7.0.0",
     "zx": "^8.3.0"
   },

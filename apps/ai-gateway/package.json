@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "test": "echo \"TODO: no test specified\" && exit 1",
+    "test": "pytest",
     "dev:trigger": "pnpm dlx trigger.dev@latest dev",
     "dev": "fastapi dev main.py"
   },

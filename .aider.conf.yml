@@ -24,7 +24,7 @@
 # Main model:
 
 ## Specify the model to use for the main chat
-#model: xxx
+model: openrouter/google/gemini-2.0-flash-thinking-exp:free
 
 #################
 # Model settings:
@@ -42,7 +42,7 @@ architect: true
 #weak-model: xxx
 
 ## Specify the model to use for editor tasks (default depends on --model)
-#editor-model: xxx
+editor-model: openrouter/google/gemini-2.0-flash-exp:free
 
 #################
 # Cache settings:
@@ -51,7 +51,7 @@ architect: true
 cache-prompts: true
 
 ## Number of times to ping at 5min intervals to keep prompt cache warm (default: 0)
-#cache-keepalive-pings: false
+cache-keepalive-pings: 1
 
 ################
 # History Files:

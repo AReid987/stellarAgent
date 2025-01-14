@@ -1,17 +1,15 @@
 # AI Gateway
 
-...........................................
-
 **App**: @stellar-agent/ai-gateway
 
-===========================================
+==========================================
 
 ##  This Document Explains
 
 - System Architecture
 - Information Flow
 
-===========================================
+==========================================
 
 ### Important links
 
@@ -24,27 +22,34 @@
 - OpenHands
 - Bolt.diy
 
-===========================================
+==========================================
 
 #### AI Gateway
 
 - DSPy:
-- Not Diamond: Evaluation & Recommendation Framework for choosing the best model per task
-- portkey-ai: Python client for Portkey
-- Open Router
+  - Prompt Engineering
+- Not Diamond: 
+  - Evaluation & Recommendation Framework 
+  - Intelligent model router for choosing the best model per task
+- portkey-ai: 
+  - Python client for Portkey
+- Open Router:
+  - Open source router for AI services
 - Comet Opik:
+  - Open source Observability platform
 - Promptfoo:
+  - Open source Evaluation & Benchmarking platform
 
-===========================================
+==========================================
 
 #### API Server
 
 - fastAPI: Python Web framework
 - uvicorn: ASGI server to run FastAPI
-- httpx: For making HTTP requests (Portkey
+- httpx: For making HTTP requests
 - python-dotenv: To manage environment variables
 
-===========================================
+==========================================
 
 ### Development Environment
 
@@ -53,7 +58,7 @@
 - PNPM
 - Turborepo
 
-===========================================
+==========================================
 
 ### DX & Interfaces
 
@@ -61,7 +66,7 @@
 - typer:
 - Textualize
 
-===========================================
+==========================================
 
 ### CI / CD
 
@@ -74,13 +79,13 @@
 - Prettier
 - Megalinter
 
-===========================================
+==========================================
 
 #### Blockchain
 
 - Stellar SDK
 
-===========================================
+==========================================
 
 #### LLM Inference Providers
 
@@ -94,7 +99,7 @@
 - GitHub Models API
 - Together AI
 
-===========================================
+==========================================
 
 #### Cloud Providers & Hosting
 
@@ -109,76 +114,56 @@
 - Cloudflare Docs
 - Azure
 
-===========================================
+==========================================
 
 ## Core Functionality
 
-...........................................
-
 ### Unified API Endpoint
-
-...........................................
 
 - A single endpoint for all AI requests.
 
 ### Load Balancing
 
-...........................................
-
 - Distribute requests across multiple LLM providers.
 
 ### Fallback and Retry Logic
-
-...........................................
 
 - Handle failures gracefully by retrying or switching providers.
 
 ### Intelligent Routing
 
-...........................................
-
 - Route requests to the best-suited provider/model based on:
   - task type
   - cost
   - latency
-  - other metrics.
+  - other metrics
 
 ### Extensibility
-
-...........................................
 
 - Easily add new providers or models in the future.
 
 ### Monitoring and Logging
 
-...........................................
-
 - Track performance, errors, and usage metrics.
 
-===========================================
+==========================================
 
 ## Aider As An API
-
-...........................................
 
 - Refactored Aider as a API
 <!-- TODO: - User Prompt enhanced via DSPy -->
 
-===========================================
+==========================================
 
 ### FastAPI Gateway:
 
 - Acts as the entry point for all requests.
 - Handles authentication, rate limiting, and request validation.
 
-...........................................
-
 ### Not Diamond:
 
 - Responsible for intelligent routing.
 - Routes requests to the best-suited provider/model based on cost, accuracy, and task type.
-
-...........................................
 
 ### Portkey:
 
@@ -186,14 +171,10 @@
 - Caches responses to reduce costs and latency.
 - Tracks usage, latency, and errors for each provider.
 
-...........................................
-
 ### Open Router:
 
 - Treated as another provider in the load balancer.
 - Provides access to free and paid models, expanding your options.
-
-...........................................
 
 ### Other Providers:
 
@@ -205,7 +186,7 @@
 - Cerebras
 - Sambanova
 
-===========================================
+==========================================
 
 ## High Level Architecture
 
@@ -213,7 +194,7 @@
 
 User prompt → FastAPI Gateway → Not Diamond → Portkey → Cached? Or LLM Provider → Response → Portkey → Not Diamond → FastAPI → User
 
-===========================================
+==========================================
 
 ### API Gateway Layer
 
@@ -228,7 +209,7 @@ User prompt → FastAPI Gateway → Not Diamond → Portkey → Cached? Or LLM P
 - Implements load balancing across LLM providers.
 - Includes intelligent routing logic to select the best provider/model for each request.
 
-===========================================
+==========================================
 
 ### Provider Adapters
 
@@ -242,28 +223,38 @@ User prompt → FastAPI Gateway → Not Diamond → Portkey → Cached? Or LLM P
 - Retries failed requests with the same or a different provider.
 -Implements circuit breakers to avoid overloading failing providers.
 
-===========================================
+==========================================
 
 ### Monitoring and Analytics
 
 - Logs requests, responses, and errors.
 - Tracks latency, cost, and success rates for each provider.
 
-===========================================
+==========================================
 
-## ai-gateway Documentation
-
-...........................................
+## @stellar-agent/ai-gateway Documentation
 
 ### Module Overview
 
 This module implements a FastAPI application that serves as the AI gateway for StellarAgent. It provides a simple API with a greeting message.
 
-===========================================
+==========================================
+
+### Setup
+
+1. Install dependencies:
+```bash
+uv pip install -r requirements.txt
+```
+
+2. Configure environment variables:
+- Copy `.env.example` to `.env`
+- Add your Portkey API key to `.env`:
+```
+PORTKEY_API_KEY=your_portkey_api_key_here
+```
 
 ### API Endpoints
-
-...........................................
 
 #### GET /
 - **Description**: Returns a greeting message.
@@ -271,18 +262,66 @@ This module implements a FastAPI application that serves as the AI gateway for S
   - **200 OK**: A JSON object containing the greeting message.
     ```json
     {
-      "message": "Hello StellarAgent"
+      "message": "Welcome to StellarAgent AI Gateway"
     }
     ```
 
-===========================================
+#### POST /v1/completions
+- **Description**: Creates a completion using Portkey's unified AI gateway. This endpoint handles load balancing, caching, fallbacks, and retries across multiple LLM providers.
+- **Request Body**:
+  ```json
+  {
+    "prompt": "Your prompt text here",
+    "model": "gpt-3.5-turbo"  // Optional, defaults to Portkey's default model
+  }
+  ```
+- **Response**:
+  - **200 OK**: The completion response
+    ```json
+    {
+      "choices": [
+        {
+          "message": {
+            "role": "assistant",
+            "content": "Generated response"
+          }
+        }
+      ]
+    }
+    ```
+  - **500 Error**: If there's an error communicating with Portkey
+    ```json
+    {
+      "detail": "Error message"
+    }
+    ```
+
+### Development
+
+To run the server locally:
+```bash
+# Install dependencies
+pnpm install
+
+# Install Python dependencies
+uv pip install -r requirements.txt
+
+# Start the development server
+pnpm dev  # This runs: fastapi dev main.py
+```
+
+The API will be available at http://localhost:8000
+
+API documentation will be available at:
+- Swagger UI: http://localhost:8000/docs
+- ReDoc: http://localhost:8000/redoc
+
+==========================================
 
 ### Functions
-
-...........................................
 
 #### main()
 - **Description**: Prints a greeting message to the console.
 - **Usage**: This function is called when the script is executed directly.
 
-===========================================
+==========================================
