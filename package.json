@@ -20,7 +20,7 @@
     }
   },
   "devDependencies": {
-    "@codesandbox/sdk": "^0.0.10",
+    "@codesandbox/sdk": "^0.3.0",
     "gptlint": "^1.6.0",
     "jest-junit": "^16.0.0",
     "lefthook": "^1.10.3",
