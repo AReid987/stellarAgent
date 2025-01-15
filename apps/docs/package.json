@@ -20,8 +20,8 @@
     "@stellar-agent/eslint-config": "workspace:*",
     "@stellar-agent/typescript-config": "workspace:*",
     "@types/node": "^20",
-    "@types/react": "18.3.1",
-    "@types/react-dom": "18.3.0",
+    "@types/react": "18.3.18",
+    "@types/react-dom": "18.3.5",
     "jest": "^29.7.0",
     "typescript": "5.5.4"
   }
