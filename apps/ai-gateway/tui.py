@@ -20,4 +20,4 @@ class TuiApp(App):
             yield Static("🪐", id="planet", classes="planet")
             yield Static("🚀", id="rocket", y=self.rocket_y)
         with Container(id="title-container", classes="hidden"):
-            yield Static("AI Gateway", id
+            yield Static("AI Gateway", id="title")
