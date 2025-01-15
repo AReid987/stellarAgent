@@ -18,6 +18,8 @@ class TuiApp(App):
         yield Header()
         yield Footer()
     
+    def action_toggle_dark(self) -> None:
+        self.theme = "light" if self.theme == "dark" else "dark"
     # CSS_PATH = "tui.tcss"
 
     # rocket_y = var(20)
