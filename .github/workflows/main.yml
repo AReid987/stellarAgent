@@ -13,17 +13,26 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4.2.2
-
+      
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v3
+        with:
+          version: latest
+      
       - name: Setup Node.js environment
         uses: actions/setup-node@v4.1.0
         with:
           node-version: 22
-
+          cache: 'pnpm'
+      
       - name: Install dependencies
-        run: npm install
-
+        run: |
+          pnpm install
+          pnpm add -D jest-junit
+      
       - name: Run tests with coverage
-        run: npm run test -- --coverage --coverageReporters=json-summary
+        run: |
+          JEST_JUNIT_CLASSNAME="{filepath}" pnpm test -- --coverage --coverageReporters=json-summary --reporters=jest-junit
 
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v3
