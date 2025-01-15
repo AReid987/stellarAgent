@@ -13,9 +13,12 @@ class TuiApp(App):
 
     def compose(self) -> ComposeResult:
         """Create child widgets for the app."""
-        yield Static("AI Gateway TUI", id="app-title")
         with Container(id="animation-container"):
             yield Static("🚀", id="rocket", y=self.rocket_y)
+        with Container(id="title-container", classes="hidden"):
+            yield Static("AI Gateway", id="app-title")
+        with Container(id="menu-container", classes="hidden"):
+            yield Static("Main Menu", id="main-menu") # Placeholder for the actual menu
 
     async def on_mount(self) -> None:
         """Call animate_rocket when the app is mounted."""
@@ -40,6 +43,13 @@ class TuiApp(App):
         # Wait for a bit before removing the message
         await asyncio.sleep(2)
         self.query_one("#launch-message").remove()
+        
+        # Show the title
+        self.query_one("#title-container").remove_class("hidden")
+        
+        # Wait for a bit before showing the main menu
+        await asyncio.sleep(1)
+        self.query_one("#menu-container").remove_class("hidden")
 
 def run():
     """Run the TUI application."""
