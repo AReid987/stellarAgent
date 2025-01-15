@@ -57,8 +57,8 @@ class TuiApp(App):
 
 def run():
     """Run the TUI application."""
-    app = TuiApp()
-    app.run()
+     app = TuiApp()
+     app.run()
 
 if __name__ == "__main__":
     run()

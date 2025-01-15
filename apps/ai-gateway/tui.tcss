@@ -1,7 +1,3 @@
-// I get an error when i run tui.py 
-// Invalid CSS property 'top'  
-// Invalid CSS property 'left'  
-// Invalid CSS property 'right' AI!  
 #animation-container {
     width: 100%;
     height: 100%;
