@@ -14,6 +14,10 @@ class TuiApp(App):
     def compose(self) -> ComposeResult:
         """Create child widgets for the app."""
         with Container(id="animation-container"):
+            yield Static("☁️", id="cloud1", classes="cloud")
+            yield Static("☁️", id="cloud2", classes="cloud")
+            yield Static("✨", id="stars", classes="stars")
+            yield Static("🪐", id="planet", classes="planet")
             yield Static("🚀", id="rocket", y=self.rocket_y)
         with Container(id="title-container", classes="hidden"):
             yield Static("AI Gateway", id="app-title")

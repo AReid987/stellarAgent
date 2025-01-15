@@ -4,6 +4,20 @@
     align: center middle;
 }
 
+#cloud1 {
+    top: 10%;
+    left: 10%;
+}
+
+#cloud2 {
+    top: 20%;
+    right: 15%;
+}
+
+#stars {
+    align: center middle;
+}
+ 
 #title-container {
     width: 100%;
     height: 100%;
