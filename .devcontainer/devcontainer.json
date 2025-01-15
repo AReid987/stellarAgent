@@ -11,6 +11,10 @@
         "ms-python.vscode-pylance"
     ],
     "forwardPorts": [],
-    "postCreateCommand": "pip install -r requirements.txt && export PYTHONPATH=$PYTHONPATH:/workspace/apps/ai-gateway",
-    "remoteUser": "vscode"
+    "postCreateCommand": "pip install -r requirements.txt",
+    "remoteUser": "vscode",
+    "workspaceFolder": "/workspace/apps/ai-gateway",
+    "remoteEnv": {
+        "PYTHONPATH": "${workspaceFolder}"
+    }
 }
