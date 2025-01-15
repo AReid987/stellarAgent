@@ -1,0 +1,24 @@
+{
+    "name": "Stellar Agent Development Container",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "terminal.integrated.defaultProfile.linux": "bash"
+            },
+            "extensions": [
+                "ms-python.python",
+                "ms-python.vscode-pylance"
+            ]
+        }
+    },
+    "forwardPorts": [],
+    "postCreateCommand": "pip install -r requirements.txt",
+    "remoteUser": "vscode",
+    "workspaceFolder": "/workspace/apps/ai-gateway",
+    "remoteEnv": {
+        "PYTHONPATH": "${workspaceFolder}"
+    }
+}

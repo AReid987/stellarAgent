@@ -7,7 +7,7 @@
     "test": "pytest",
     "lint": "echo 'TODO: install GPTLint' && exit 1",
     "dev:trigger": "pnpm dlx trigger.dev@latest dev",
-    "dev": "fastapi dev main.py"
+    "dev": "fastapi dev"
   },
   "dependencies": {
     "@trigger.dev/sdk": "^3.3.7"
