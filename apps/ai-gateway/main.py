@@ -3,6 +3,9 @@ import os
 
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
+# I have an error pointing to this line when running `fastapi dev`
+# `ModuleNotFoundError: No module named 'src'`
+# Please fix this issue AI!
 from src.portkey.portkey_client import PortkeyClient
 portkey_client = PortkeyClient()
 
