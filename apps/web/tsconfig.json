@@ -9,6 +9,7 @@
     "jsx": "preserve",
     "moduleResolution": "node16",
     "module": "Node16",
+    "allowImportingTsExtensions": true,
     "types": ["@testing-library/jest-dom"]
   },
   "include": [
