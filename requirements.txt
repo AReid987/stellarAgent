@@ -67,7 +67,7 @@ charset-normalizer==3.3.2
     # via
     #   aider-chat
     #   requests
-click==8.1.7
+click==8.1.8
     # via
     #   aider-chat
     #   click-option-group
