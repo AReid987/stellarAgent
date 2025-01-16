@@ -146,7 +146,7 @@ fsspec==2024.6.1
     #   torch
 git-python==1.0.3
     # via open-interpreter
-gitdb==4.0.11
+gitdb==4.0.12
     # via
     #   aider-chat
     #   gitpython
