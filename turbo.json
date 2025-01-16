@@ -31,5 +31,41 @@
     "test:cov": {
       "cache": true
     }
-  }
+  },
+  "pipeline": {
+    "ai-gateway#install": {
+      "cache": false,
+      "inputs": ["apps/ai-gateway/requirements.txt"],
+      "outputs": ["apps/ai-gateway/.venv/**"]
+    },
+    "ai-gateway#dev": {
+      "cache": false,
+      "persistent": true,
+      "dependsOn": ["ai-gateway#install"],
+      "env": ["PYTHONPATH", "FASTAPI_ENV"],
+      "inputs": [
+        "apps/ai-gateway/**/*.py",
+        "apps/ai-gateway/requirements.txt"
+      ]
+    },
+    "ai-gateway#test": {
+      "cache": true,
+      "dependsOn": ["ai-gateway#install"],
+      "inputs": [
+        "apps/ai-gateway/**/*.py",
+        "apps/ai-gateway/tests/**"
+      ],
+      "outputs": ["apps/ai-gateway/coverage/**"]
+    },
+    "ai-gateway#lint": {
+      "cache": true,
+      "dependsOn": ["ai-gateway#install"],
+      "inputs": ["apps/ai-gateway/**/*.py"]
+    }
+  },
+  "globalDependencies": [
+    "$PYTHON_VERSION",
+    ".python-version"
+  ],
+  "globalEnv": ["PYTHONPATH", "FASTAPI_ENV"]
 }

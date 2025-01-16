@@ -1,6 +1,7 @@
 # Stage 1: Build
 FROM python:3.12-slim AS builder
-
+ENV TURBO_TOKEN=$TURBO_TOKEN
+ENV TURBO_TEAM=$TURBO_TEAM
 # Prevents Python from writing pyc files.
 ENV PYTHONDONTWRITEBYTECODE=1
 

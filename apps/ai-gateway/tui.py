@@ -1,9 +1,9 @@
 from textual.app import App, ComposeResult
 from textual.widgets import Static, Footer, Header
-from textual.reactive import var
-from textual.containers import Container
-import asyncio
-from textual.easing import Easing
+# from textual.reactive import var
+# from textual.containers import Container
+# import asyncio
+# from textual.easing import Easing
 class TuiApp(App):
     """Textual TUI for the AI Gateway."""
 
@@ -15,6 +15,7 @@ class TuiApp(App):
 
     def compose(self) -> ComposeResult:
         
+        yield Static("☁️", id="cloud1", classes="cloud")
         yield Header()
         yield Footer()
     

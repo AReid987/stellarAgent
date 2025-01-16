@@ -1,24 +1,21 @@
 {
-    "name": "Stellar Agent Development Container",
+    "name": "Stellar Agent AI Gateway",
     "build": {
-        "dockerfile": "Dockerfile"
+        "dockerfile": "Dockerfile",
+        "context": "."
     },
-    "customizations": {
-        "vscode": {
-            "settings": {
-                "terminal.integrated.defaultProfile.linux": "bash"
-            },
-            "extensions": [
-                "ms-python.python",
-                "ms-python.vscode-pylance"
-            ]
-        }
-    },
-    "forwardPorts": [],
-    "postCreateCommand": "pip install -r requirements.txt",
-    "remoteUser": "vscode",
+    "remoteUser": "developer",
     "workspaceFolder": "/workspace/apps/ai-gateway",
     "remoteEnv": {
-        "PYTHONPATH": "${workspaceFolder}"
-    }
+        "PYTHONPATH": "${workspaceFolder}",
+        "FASTAPI_ENV": "development",
+        "PATH": "/home/developer/.local/bin:${PATH}"
+    },
+    "features": {
+        "ghcr.io/devcontainers/features/node:1": {
+            "version": "lts"
+        }
+    },
+    "forwardPorts": [8000],
+    "postCreateCommand": "turbo run install:deps --filter=@stellar-agent/ai-gateway"
 }

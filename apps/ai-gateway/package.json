@@ -4,10 +4,16 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "test": "pytest",
-    "lint": "echo 'TODO: install GPTLint' && exit 1",
+    "test": "turbo run ai-gateway#test",
+    "test:cov": "pytest --cov=. --cov-report=html",
+    "lint": "turbo run ai-gateway#lint",
+    "dev": "turbo run ai-gateway#dev",
+    "install:deps": "turbo run ai-gateway#install",
+    "lint:fix": "ruff check --fix . && ruff format",
     "dev:trigger": "pnpm dlx trigger.dev@latest dev",
-    "dev": "fastapi dev"
+    "compile:deps": "uv pip compile pyproject.toml -o requirements.txt",
+    "install:deps:compile": "pnpm run compile:deps && pnpm run install:deps",
+    "clean": "rm -rf .pytest_cache coverage .coverage"
   },
   "dependencies": {
     "@trigger.dev/sdk": "^3.3.7"

@@ -39,7 +39,7 @@ model: openrouter/google/gemini-2.0-flash-thinking-exp:free
 architect: true
 
 ## Specify the model to use for commit messages and chat history summarization (default depends on --model)
-#weak-model: xxx
+weak-model: mistral/open-mistral-nemo-2407
 
 ## Specify the model to use for editor tasks (default depends on --model)
 editor-model: openrouter/google/gemini-2.0-flash-exp:free
@@ -63,7 +63,7 @@ cache-keepalive-pings: 1
 #chat-history-file: .aider.chat.history.md
 
 ## Restore the previous chat history messages (default: False)
-#restore-chat-history: false
+# restore-chat-history: true
 
 ## Log the conversation with the LLM to this file (for example, .aider.llm.history)
 llm-history-file: .aider.llm.history
@@ -128,13 +128,13 @@ watch-files: true
 # Voice settings:
 
 ## Specify the input device name for voice recording
-#voice-input-device: xxx
+voice-input-device: MacBook Pro Microphone
 
 ################
 # Other settings:
 
 ## specify a read-only file (can be used multiple times)
-#read: xxx
+read: CONVENTIONS.md
 
 ## Specify multiple values like this:
 #read:

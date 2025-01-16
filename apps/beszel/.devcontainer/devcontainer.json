@@ -1,0 +1,34 @@
+{
+    "name": "Stellar Agent Beszel",
+    "build": {
+        "dockerfile": "Dockerfile",
+        "context": "."
+    },
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "terminal.integrated.defaultProfile.linux": "bash",
+                "typescript.updateImportsOnFileMove.enabled": "always",
+                "editor.defaultFormatter": "biomejs.biome",
+                "editor.formatOnSave": true
+            },
+            "extensions": [
+                "dbaeumer.vscode-eslint",
+                "biomejs.biome",
+                "bradlc.vscode-tailwindcss",
+                "ms-azuretools.vscode-docker",
+                "GitHub.copilot",
+                "eamodio.gitlens"
+            ]
+        }
+    },
+    "forwardPorts": [3000],
+    "postCreateCommand": "npm install",
+    "remoteUser": "node",
+    "workspaceFolder": "/workspace/apps/beszel",
+    "features": {
+        "ghcr.io/devcontainers/features/node:1": {
+            "version": "lts"
+        }
+    }
+}

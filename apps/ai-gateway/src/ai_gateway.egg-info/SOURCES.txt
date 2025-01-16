@@ -3,7 +3,7 @@
 .python-version
 .sourcery.yaml
 Dockerfile
-Dockerfile.dive
+
 README.Docker.md
 README.md
 __init__.py
