@@ -198,7 +198,7 @@ html2image==2.0.5
     # via open-interpreter
 html2text==2024.2.26
     # via open-interpreter
-httpcore==1.0.5
+httpcore==1.0.7
     # via
     #   aider-chat
     #   httpx
