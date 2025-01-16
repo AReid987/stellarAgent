@@ -8,7 +8,7 @@
     "test:cov": "pytest --cov=. --cov-report=html",
     "lint": "ruff check . && ruff format --check",
     "dev": "uvicorn main:app --reload",
-    "compile:deps": "uv pip compile pyproject.toml -o requirements.txt",
+    "compile:deps": "source .venv/bin/activate && uv pip compile pyproject.toml -o requirements.txt",
     "install:deps": "uv pip install -r requirements.txt",
     "lint:fix": "ruff check --fix . && ruff format",
     "dev:trigger": "pnpm dlx trigger.dev@latest dev",

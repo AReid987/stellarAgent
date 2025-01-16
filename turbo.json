@@ -49,7 +49,12 @@
         "requirements.txt",
         ".venv/**"
       ]
-
+    },
+    "compile:deps": {
+      "cache": false,
+      "dependsOn": [
+        "install:deps^"
+      ]
     }
   },
   "globalDependencies": [
