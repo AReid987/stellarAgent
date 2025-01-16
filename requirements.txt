@@ -286,7 +286,7 @@ jupyter-core==5.7.2
     #   jupyter-client
 jupyterlab-widgets==3.0.13
     # via ipywidgets
-kiwisolver==1.4.7
+kiwisolver==1.4.8
     # via matplotlib
 litellm==1.44.8
     # via
