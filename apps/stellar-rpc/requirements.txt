@@ -43,7 +43,7 @@ propcache==0.2.1
     #   yarl
 pycparser==2.22
     # via cffi
-pydantic==2.10.4
+pydantic==2.10.5
     # via stellar-sdk
 pydantic-core==2.27.2
     # via pydantic
