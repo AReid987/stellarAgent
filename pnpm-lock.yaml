@@ -53,7 +53,7 @@ importers:
     dependencies:
       '@trigger.dev/sdk':
         specifier: ^3.3.7
-        version: 3.3.7(zod@3.23.8)
+        version: 3.3.11(zod@3.23.8)
     devDependencies:
       '@trigger.dev/build':
         specifier: ^3.3.7
@@ -1670,12 +1670,8 @@ packages:
     resolution: {integrity: sha512-UpzFwiF5X4SVAmWXQzkw9Wj7tnaoDeyFwfa7heApoFJI3Ox3pOum3Xs9nWiro56KDp3tYWh7OAX6uH8I+T728g==}
     engines: {node: '>=18.20.0'}
 
-  '@trigger.dev/core@3.3.7':
-    resolution: {integrity: sha512-K5mAYXYbhSi8TP57VorfTlbNcbR4WIhUfjCsuSwL5tl6rVIM88ZJDdTN034XlZBh0FhAKIIIp8MUG1wt3bRjkA==}
-    engines: {node: '>=18.20.0'}
-
-  '@trigger.dev/sdk@3.3.7':
-    resolution: {integrity: sha512-PoEp6BMuC2UA6s8AgBaBth8w0GEgKvGfdbGPb5hxuUojm0ejSkQ9pFTNaV/R0l4FyfHzc1sTrC06GQuBXnoA8g==}
+  '@trigger.dev/sdk@3.3.11':
+    resolution: {integrity: sha512-gnFh6NHwXjavrF0tD34Tf98FB1Sn6fCEN6LvVN8hajcLGwGypWKa++Tytk4JYOtoDx1U+Omaq7ldULxLCFTjYQ==}
     engines: {node: '>=18.20.0'}
     peerDependencies:
       zod: ^3.0.0
@@ -2388,8 +2384,8 @@ packages:
   create-require@1.1.1:
     resolution: {integrity: sha512-dcKFX3jn0MpIaXjisoRvexIJVEKzaq7z2rZKxf+MSr9TkdmHmsU4m2lcLojrj/FHl8mk5VxMmYA+ftRkP/3oKQ==}
 
-  cronstrue@2.52.0:
-    resolution: {integrity: sha512-NKgHbWkSZXJUcaBHSsyzC8eegD6bBd4O0oCI6XMIJ+y4Bq3v4w7sY3wfWoKPuVlq9pQHRB6od0lmKpIqi8TlKA==}
+  cronstrue@2.53.0:
+    resolution: {integrity: sha512-CkAcaI94xL8h6N7cGxgXfR5D7oV2yVtDzB9vMZP8tIgPyEv/oc/7nq9rlk7LMxvc3N+q6LKZmNLCVxJRpyEg8A==}
     hasBin: true
 
   cross-spawn@7.0.6:
@@ -2765,8 +2761,8 @@ packages:
     resolution: {integrity: sha512-IzUmBGPR3+oUG9dUeXynyNmf91/3zUSJg1lCktzKw47OXuhco54U3r9B7O4XX+Rb1Itm9OZ2b0RkTs10bICOxA==}
     engines: {node: '>=12.0.0'}
 
-  evt@2.5.8:
-    resolution: {integrity: sha512-wjurRtEqepH03fZSzkCUAw2tNNtEoeoEYXf7EqG8uU52wQ3D/+ctyQE8hf+YR/5DXZlwl2jNGLMm4hAd/wyD6g==}
+  evt@2.5.9:
+    resolution: {integrity: sha512-GpjX476FSlttEGWHT8BdVMoI8wGXQGbEOtKcP4E+kggg+yJzXBZN2n4x7TS/zPBJ1DZqWI+rguZZApjjzQ0HpA==}
 
   execa@5.1.1:
     resolution: {integrity: sha512-8uSpZZocAZRBAPIEINJj3Lo9HyGitllczc27Eh5YYojjMFMn8yHMDMaUHE2Jqfq05D/wucwI4JGURyXt1vchyg==}
@@ -7163,48 +7159,16 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@trigger.dev/core@3.3.7':
-    dependencies:
-      '@electric-sql/client': 1.0.0-beta.1
-      '@google-cloud/precise-date': 4.0.0
-      '@jsonhero/path': 1.0.21
-      '@opentelemetry/api': 1.9.0
-      '@opentelemetry/api-logs': 0.52.1
-      '@opentelemetry/exporter-logs-otlp-http': 0.52.1(@opentelemetry/api@1.9.0)
-      '@opentelemetry/exporter-trace-otlp-http': 0.52.1(@opentelemetry/api@1.9.0)
-      '@opentelemetry/instrumentation': 0.52.1(@opentelemetry/api@1.9.0)
-      '@opentelemetry/resources': 1.25.1(@opentelemetry/api@1.9.0)
-      '@opentelemetry/sdk-logs': 0.52.1(@opentelemetry/api@1.9.0)
-      '@opentelemetry/sdk-node': 0.52.1(@opentelemetry/api@1.9.0)
-      '@opentelemetry/sdk-trace-base': 1.25.1(@opentelemetry/api@1.9.0)
-      '@opentelemetry/sdk-trace-node': 1.25.1(@opentelemetry/api@1.9.0)
-      '@opentelemetry/semantic-conventions': 1.25.1
-      dequal: 2.0.3
-      eventsource-parser: 3.0.0
-      execa: 8.0.1
-      humanize-duration: 3.32.1
-      jose: 5.9.6
-      nanoid: 5.0.9
-      socket.io-client: 4.7.5
-      superjson: 2.2.2
-      zod: 3.23.8
-      zod-error: 1.5.0
-      zod-validation-error: 1.5.0(zod@3.23.8)
-    transitivePeerDependencies:
-      - bufferutil
-      - supports-color
-      - utf-8-validate
-
-  '@trigger.dev/sdk@3.3.7(zod@3.23.8)':
+  '@trigger.dev/sdk@3.3.11(zod@3.23.8)':
     dependencies:
       '@opentelemetry/api': 1.9.0
       '@opentelemetry/api-logs': 0.52.1
       '@opentelemetry/semantic-conventions': 1.25.1
-      '@trigger.dev/core': 3.3.7
+      '@trigger.dev/core': 3.3.11
       chalk: 5.4.1
-      cronstrue: 2.52.0
+      cronstrue: 2.53.0
       debug: 4.4.0
-      evt: 2.5.8
+      evt: 2.5.9
       slug: 6.1.0
       terminal-link: 3.0.0
       ulid: 2.3.0
@@ -8098,7 +8062,7 @@ snapshots:
 
   create-require@1.1.1: {}
 
-  cronstrue@2.52.0: {}
+  cronstrue@2.53.0: {}
 
   cross-spawn@7.0.6:
     dependencies:
@@ -8529,7 +8493,7 @@ snapshots:
 
   eventsource@2.0.2: {}
 
-  evt@2.5.8:
+  evt@2.5.9:
     dependencies:
       minimal-polyfills: 2.2.3
       run-exclusive: 2.2.19
