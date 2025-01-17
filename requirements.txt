@@ -93,7 +93,7 @@ cycler==0.12.1
     # via matplotlib
 cython==3.0.11
     # via screeninfo
-debugpy==1.8.11
+debugpy==1.8.12
     # via ipykernel
 decorator==5.1.1
     # via ipython
