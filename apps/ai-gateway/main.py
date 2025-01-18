@@ -70,7 +70,7 @@ async def create_completion(request: PromptRequest):
 def main():
     """Print a greeting message."""
     if len(sys.argv) > 1 and sys.argv[1] == "tui":
-        from apps.ai-gateway.tui import TuiApp
+        from src.tui import TuiApp
         TuiApp().run()
     else:
         print("AI Gateway initialized with Portkey client!")
