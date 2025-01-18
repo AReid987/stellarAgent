@@ -24,6 +24,8 @@
 # Main model:
 
 ## Specify the model to use for the main chat
+
+# model: mistral/mistral-large-latest
 model: openrouter/google/gemini-2.0-flash-thinking-exp:free
 
 #################
@@ -42,7 +44,8 @@ architect: true
 weak-model: mistral/open-mistral-nemo-2407
 
 ## Specify the model to use for editor tasks (default depends on --model)
-editor-model: openrouter/google/gemini-2.0-flash-exp:free
+editor-model: cerebras/llama3.3-70b
+# editor-model: openrouter/google/gemini-2.0-flash-exp:free
 
 #################
 # Cache settings:

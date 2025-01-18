@@ -170,6 +170,8 @@ rich==13.9.4
     #   typer
 rich-toolkit==0.13.2
     # via fastapi-cli
+ruff==0.9.2
+    # via ai-gateway (pyproject.toml)
 shellingham==1.5.4
     # via typer
 six==1.17.0

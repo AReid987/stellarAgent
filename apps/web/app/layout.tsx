@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
-import localFont from 'next/font/local'; // no change needed here, but we need to check the usage
+import localFont from "next/font/local";
 import "./globals.css";
 
-// we need to check the usage of localFont, but the provided information does not indicate any issues with it
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",

@@ -3,7 +3,6 @@
 .python-version
 .sourcery.yaml
 Dockerfile
-
 README.Docker.md
 README.md
 __init__.py
@@ -21,6 +20,8 @@ uv.lock
 .devcontainer/devcontainer.json
 __pycache__/__init__.cpython-312.pyc
 __pycache__/main.cpython-312.pyc
+__pycache__/tui.cpython-312.pyc
+docs/plan-ai-gateway-tui.md
 src/__init__.py
 src/__pycache__/__init__.cpython-312.pyc
 src/ai_gateway.egg-info/PKG-INFO

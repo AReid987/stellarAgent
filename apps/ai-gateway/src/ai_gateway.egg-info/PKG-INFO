@@ -16,6 +16,7 @@ Requires-Dist: pytest
 Requires-Dist: playwright>=1.49.1
 Requires-Dist: textual>=1.0.0
 Requires-Dist: textual-dev>=1.7.0
+Requires-Dist: ruff>=0.9.2
 
 # AI Gateway
 
@@ -27,6 +28,7 @@ Requires-Dist: textual-dev>=1.7.0
 
 - System Architecture
 - Information Flow
+- Usage
 
 ==========================================
 
@@ -36,10 +38,14 @@ Requires-Dist: textual-dev>=1.7.0
 
 #### Coders
 
-- Aider Chat
+- 🏆 [Aider Chat](https://aider.chat/)
+- Bolt.diy
 - GPT Pilot
 - OpenHands
-- Bolt.diy
+- Project IDX
+- Databutton
+- Cline
+- Blackbox
 
 ==========================================
 
@@ -344,3 +350,97 @@ API documentation will be available at:
 - **Usage**: This function is called when the script is executed directly.
 
 ==========================================
+
+## Working with the Coders
+
+#### Direct Usage
+
+### Aider
+
+#### Adding Files
+
+- Add just the files you want to edit: 
+
+```bash
+   /add <file1> <file2> ...
+```
+
+#### Managing the Chat
+
+- Keep only the files needed for the current task.
+- Drop unnecessary files from the chat:
+
+```bash
+   /drop <file1> <file2> ...
+```
+
+#### Planning
+
+- Break big tasks into smaller ones.
+- Do one sub task at a time.
+
+- Make a plan for complex tasks.
+- Use the `/ask` command to discuss the plan with Aider
+
+```bash
+   /ask I want to build ...
+```
+
+#### Creating New Files
+
+- When you want Aider to create a new file, create a new empty file and `/add` it to the chat.
+
+#### Fixing Bugs and Tests
+
+- To fix a bug use the `/run` command for the failing execution.
+
+- to fix a failing test use the `/test` command.
+
+#### Providing Docs
+
+- Paste a URL to the chat and Aider will scrape and read the content.
+- Use the `/read` command to provide the content of a file from anywhere on the local filesystem.
+
+#### Conventions
+
+- Add small Markdown files to the chat with conventions
+- To mark as read-only and enable caching:
+  - `/read CONVENTIONS.md`
+  - `aider --read CONVENTIONS.md`
+
+- [Community Conventions Repo](https://github.com/Aider-AI/conventions)
+
+- add to `.aider.conf.yml` to always load conventions:
+
+```yaml
+  read: CONVENTIONS.md
+```  
+
+#### Copy / Paste Web Chat
+
+- Use the `/copy-context` command to copy the chat context to the clipboard.
+#### Interrupting Aider
+
+- CTRL + C
+
+#### Multi line input
+
+- use the `{` and `}` characters to create multi line input.
+- Paste the multi line input into the chat.
+- Use the `--editor` command to edit the multi line input in your editor.
+
+⭐ #### Watch Mode
+
+- Use the `--watch-files` flag
+- Add `watch-files: true` to your `.aider.conf.yml`` file
+- Aider will watch for comments beginning or ending with `AI`
+- If `AI!` is used Aider will make changes to the code
+- If `AI?` is used Aider will respond to the question
+
+#### Troubleshooting
+
+- Use the `/clear` command to clear the chat history.
+- `/drop` unnecessary files from the chat.
+- Try `/ask` to create a plan before writing code.
+- Try a new `/model` to see if it works better.
+- Code the next step yourself, then try switching back to Aider.

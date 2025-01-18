@@ -10,3 +10,4 @@ pytest
 playwright>=1.49.1
 textual>=1.0.0
 textual-dev>=1.7.0
+ruff>=0.9.2

@@ -1,8 +1,0 @@
-{
-  "name": "@stellar-agent/beszel",
-  "version": "1.0.0",
-  "description": "A lightweight server resource monitoring hub with historical data, docker stats, and alerts.",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  }
-}
