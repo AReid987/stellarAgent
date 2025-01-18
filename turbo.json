@@ -13,7 +13,7 @@
       "outputs": [
         ".next/**",
         "!.next/cache/**"
-      ]
+       ]
     },
     "lint": {
       "dependsOn": [
@@ -49,9 +49,81 @@
         "requirements.txt",
         ".venv/**"
       ]
+    },
+    "ai-gateway:test": {
+      "cache": true,
+      "inputs": [
+        "$TURBO_DEFAULT$"
+      ]
+    },
+    "ai-gateway:test:cov": {
+      "cache": true,
+       "inputs": [
+        "$TURBO_DEFAULT$"
+      ]
+    },
+     "ai-gateway:lint": {
+      "dependsOn": [
+        "^lint"
+      ],
+       "inputs": [
+        "$TURBO_DEFAULT$"
+      ]
+    },
+    "ai-gateway:dev": {
+      "cache": false,
+      "persistent": true,
+       "inputs": [
+        "$TURBO_DEFAULT$"
+      ]
+    },
+    "ai-gateway:compile:deps": {
+      "cache": true,
+       "inputs": [
+        "$TURBO_DEFAULT$",
+        "pyproject.toml"
+      ],
+      "outputs": [
+        "requirements.txt"
+      ]
+    },
+     "ai-gateway:install:deps": {
+      "cache": true,
+       "inputs": [
+        "requirements.txt"
+      ],
+      "outputs": [
+        ".venv/**"
+      ]
+    },
+    "ai-gateway:lint:fix": {
+       "inputs": [
+        "$TURBO_DEFAULT$"
+      ]
+    },
+    "ai-gateway:dev:trigger": {
+      "cache": false,
+      "persistent": true,
+       "inputs": [
+        "$TURBO_DEFAULT$"
+      ]
+    },
+    "ai-gateway:install:deps:compile": {
+      "cache": true,
+       "inputs": [
+        "$TURBO_DEFAULT$",
+        "pyproject.toml"
+      ],
+      "outputs": [
+        "requirements.txt",
+        ".venv/**"
+      ]
+    },
+    "ai-gateway:clean": {
+       "inputs": [
+        "$TURBO_DEFAULT$"
+      ]
     }
-    // We want to be able to trigger the scripts for the AI Gateway
-    // using turbo tasks AI!
   },
   "globalDependencies": [
     "$PYTHON_VERSION",
