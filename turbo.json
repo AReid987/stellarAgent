@@ -49,13 +49,9 @@
         "requirements.txt",
         ".venv/**"
       ]
-    },
-    "compile:deps": {
-      "cache": false,
-      "dependsOn": [
-        "install:deps^"
-      ]
     }
+    // We want to be able to trigger the scripts for the AI Gateway
+    // using turbo tasks AI!
   },
   "globalDependencies": [
     "$PYTHON_VERSION",
