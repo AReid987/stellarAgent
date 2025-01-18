@@ -16,19 +16,25 @@
        ]
     },
     "lint": {
-      "dependsOn": [
-        "^lint"
-      ]
-    },
+     "dependsOn": [
+       "^lint"
+     ],
+      "inputs": [
+       "$TURBO_DEFAULT$"
+     ]
+   },
     "check-types": {
       "dependsOn": [
         "^check-types"
       ]
     },
-    "dev": {
-      "cache": false,
-      "persistent": true
-    },
+   "dev": {
+     "cache": false,
+     "persistent": true,
+      "inputs": [
+       "$TURBO_DEFAULT$"
+     ]
+   },
     "dev:trigger": {
       "cache": false,
       "persistent": true
@@ -45,21 +51,6 @@
     },
     "test:cov": {
       "cache": true,
-       "inputs": [
-        "$TURBO_DEFAULT$"
-      ]
-    },
-     "lint": {
-      "dependsOn": [
-        "^lint"
-      ],
-       "inputs": [
-        "$TURBO_DEFAULT$"
-      ]
-    },
-    "dev": {
-      "cache": false,
-      "persistent": true,
        "inputs": [
         "$TURBO_DEFAULT$"
       ]
