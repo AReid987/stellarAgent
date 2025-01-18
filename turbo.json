@@ -38,31 +38,18 @@
       "persistent": false
     },
     "test": {
-      "cache": true
-    },
-    "test:cov": {
-      "cache": true
-    },
-    "install:deps": {
-      "cache": true,
-      "outputs": [
-        "requirements.txt",
-        ".venv/**"
-      ]
-    },
-    "ai-gateway:test": {
       "cache": true,
       "inputs": [
         "$TURBO_DEFAULT$"
       ]
     },
-    "ai-gateway:test:cov": {
+    "test:cov": {
       "cache": true,
        "inputs": [
         "$TURBO_DEFAULT$"
       ]
     },
-     "ai-gateway:lint": {
+     "lint": {
       "dependsOn": [
         "^lint"
       ],
@@ -70,56 +57,38 @@
         "$TURBO_DEFAULT$"
       ]
     },
-    "ai-gateway:dev": {
+    "dev": {
       "cache": false,
       "persistent": true,
        "inputs": [
         "$TURBO_DEFAULT$"
       ]
     },
-    "ai-gateway:compile:deps": {
+    "compile:deps": {
       "cache": true,
        "inputs": [
         "$TURBO_DEFAULT$",
         "pyproject.toml"
       ],
       "outputs": [
-        "requirements.txt"
+        "**/requirements.txt"
       ]
     },
-     "ai-gateway:install:deps": {
+     "install:deps": {
       "cache": true,
        "inputs": [
-        "requirements.txt"
-      ],
+        "**/requirements.txt"
+       ],
       "outputs": [
-        ".venv/**"
+        "**/.venv/**"
       ]
     },
-    "ai-gateway:lint:fix": {
+    "lint:fix": {
        "inputs": [
         "$TURBO_DEFAULT$"
       ]
     },
-    "ai-gateway:dev:trigger": {
-      "cache": false,
-      "persistent": true,
-       "inputs": [
-        "$TURBO_DEFAULT$"
-      ]
-    },
-    "ai-gateway:install:deps:compile": {
-      "cache": true,
-       "inputs": [
-        "$TURBO_DEFAULT$",
-        "pyproject.toml"
-      ],
-      "outputs": [
-        "requirements.txt",
-        ".venv/**"
-      ]
-    },
-    "ai-gateway:clean": {
+    "clean": {
        "inputs": [
         "$TURBO_DEFAULT$"
       ]
@@ -134,5 +103,3 @@
     "FASTAPI_ENV"
   ]
 }
-// The tasks should not be specifc tp the ai-gateway app, but rather they should be generic to the turbo.json so that they can be used across multiple apps AI!
-
