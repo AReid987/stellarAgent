@@ -12,7 +12,7 @@ annotated-types==0.7.0
     #   pydantic
 anthropic==0.37.1
     # via open-interpreter
-anyio==4.4.0
+anyio==4.8.0
     # via
     #   aider-chat
     #   anthropic
