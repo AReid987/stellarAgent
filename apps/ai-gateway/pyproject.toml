@@ -24,4 +24,4 @@ readme = "README.md"
 requires-python = ">=3.12"
 
 [project.scripts]
-ai-gateway = "tui:run"
+ai-gateway = "main:main"
