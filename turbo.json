@@ -22,7 +22,7 @@
       "inputs": [
        "$TURBO_DEFAULT$"
      ]
-   },
+    },
     "check-types": {
       "dependsOn": [
         "^check-types"
@@ -86,7 +86,6 @@
     }
   },
   "globalDependencies": [
-    "$PYTHON_VERSION",
     ".python-version"
   ],
   "globalEnv": [
