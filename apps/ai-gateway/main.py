@@ -4,7 +4,7 @@ import os
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 from src.portkey.portkey_client import PortkeyClient
-from src.tui import TuiApp
+
 portkey_client = PortkeyClient()
 
 app = FastAPI(title="AI Gateway")
@@ -68,13 +68,7 @@ async def create_completion(request: PromptRequest):
         raise HTTPException(status_code=500, detail=str(e))
 
 def main():
-    """Print a greeting message."""
-    if len(sys.argv) > 1 and sys.argv[1] == "tui":
-        from src.tui import TuiApp
-        TuiApp().run()
-    else:
-        print("AI Gateway initialized with Portkey client!")
-    # To lint this package, run: pnpm lint --filter=ai-gateway
+    print("AI Gateway initialized with Portkey client!")
 
 if __name__ == "__main__":
     main()
