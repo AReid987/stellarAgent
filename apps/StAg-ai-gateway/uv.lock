@@ -200,7 +200,7 @@ wheels = [
 
 [[package]]
 name = "nitric"
-version = "1.2.3"
+version = "1.2.4"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "asyncio" },
@@ -211,9 +211,9 @@ dependencies = [
     { name = "opentelemetry-sdk" },
     { name = "protobuf" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/a4/2a/190892e146b3abd95aafbdbbd8e20f66df314f7c811ab3303cc3f318fb29/nitric-1.2.3.tar.gz", hash = "sha256:fea874ac0874528abe5e9e849b7a5f05525207347ece38eb26410b681f7f22aa", size = 42878 }
+sdist = { url = "https://files.pythonhosted.org/packages/ce/6a/cf897d0d650eb778420999bfe1c7bde2950b609f7cc9a63a9441e87cd8d0/nitric-1.2.4.tar.gz", hash = "sha256:b171317e0aa9ddf12e42eacfb58d94c5db90c065976cf2c636a1c2f18cf208bd", size = 42983 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/f8/bd/587bfcd56dc553caa6e64fdd28fcbf450c4f4844c89212c02deb4a663c8d/nitric-1.2.3-py3-none-any.whl", hash = "sha256:6e8f3bb54ae9b2f7c98b7c8c436560752f12c4411e59218907b58e70da42490c", size = 84874 },
+    { url = "https://files.pythonhosted.org/packages/44/b4/dbeff33b12380e525f69d2c685bd991c350d17df60cf757c67545a3da30c/nitric-1.2.4-py3-none-any.whl", hash = "sha256:a70480c86407211cca8ce0f9ae7290a654ffa79ea602c02b9e91e111825b31b5", size = 84979 },
 ]
 
 [[package]]
@@ -367,7 +367,7 @@ dev = [
 [package.metadata]
 requires-dist = [
     { name = "betterproto", specifier = "==2.0.0b6" },
-    { name = "nitric", specifier = "==1.2.3" },
+    { name = "nitric", specifier = "==1.2.4" },
 ]
 
 [package.metadata.requires-dev]
