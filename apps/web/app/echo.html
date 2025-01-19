@@ -33,9 +33,9 @@
 
 
       // This is the App Id provided by the dashboard that identifies this Calls Application.
-      const appId = 'e48c12b20492f8959aa0d3627dcd0cdc';
+      const appId = process.env.CF_CALLS_APP_ID;
       // DO NOT USE YOUR SECRET IN THE BROWSER FOR PRODUCTION. It should be kept and used server-side.
-      const appSecret = '6df6088f9fd6314eb448db1ceb9c95df3b59fa7b571b5994a0b71a4eb84e536b';
+      const appSecret = process.env.CF_CALLS_APP_SECRET;
 
 
       class CallsApp {

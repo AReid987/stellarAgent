@@ -1,7 +1,0 @@
-{
-  "name": "@stellar-agent/ingester",
-  "type": "module",
-  "scripts": {
-    "test": ""
-  }
-}
