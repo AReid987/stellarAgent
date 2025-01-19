@@ -42,7 +42,7 @@ jobs:
           fetch-depth: 2
       
       - name: Cache turbo build setup
-        uses: actions/cache@v4
+        uses: actions/cache@v4.2.0
         with: 
           path: .turbo
           key: ${{ runner.os }}-turbo-${{ github.sha }}
@@ -51,12 +51,12 @@ jobs:
 
       
       - name: Setup pnpm
-        uses: pnpm/action-setup@e303250a2450c28e843bf798954fac81d4835f68
+        uses: pnpm/action-setup@v4.0.0
         with:
           version: latest
       
       - name: Setup Node.js environment
-        uses: actions/setup-node@8f9cc178b6e843639351e0bd5d638e5fd0a8dec7
+        uses: actions/setup-node@v4.1.0
         with:
           node-version: 22
           cache: 'pnpm'
@@ -93,12 +93,12 @@ jobs:
       #     revision: ${{ github.event.pull_request.base.sha }}
       
       - name: Upload coverage to Codecov
-        uses: codecov/codecov-action@25fe46e17d692bac1908f2f457f98d2c936d894d
+        uses: codecov/codecov-action@v5.1.2
         with:
           files: coverage/coverage-summary.json
 
       - name: Upload test results to Codecov
         if: ${{ !cancelled() }}
-        uses: codecov/test-results-action@4e79e65778be1cecd5df25e14af1eafb6df80ea9
+        uses: codecov/test-results-action@v.1.0.2
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
