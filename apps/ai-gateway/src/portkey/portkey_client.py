@@ -12,14 +12,15 @@ class PortkeyClient:
             config = os.getenv("PORTKEY_CONFIG"),
         )
 
-    def chat_completion(self, messages, model_name=None, config_id=None, metadata=None, span_id=None, span_name=None):
+    def chat_completion(self, messages, model_name=None, config_id=None, metadata=None, span_id=None, span_name=None, trace_id=None):
         response = self.portkey.chat.completions.create(
             messages = messages,
             model = model_name, #Optional model name
             config = config_id,
             metadata = metadata,
-            traceId = span_id, 
+            spanId = span_id,
             spanName = span_name,
+            traceId = trace_id,
         )
 
         return response.choices[0].message.content

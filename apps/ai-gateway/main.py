@@ -51,6 +51,7 @@ async def create_completion(request: PromptRequest):
             metadata=request.metadata,
             span_id=request.span_id,
             span_name=request.span_name,
+            trace_id=request.trace_id,
         )
 
         if from_cache:
