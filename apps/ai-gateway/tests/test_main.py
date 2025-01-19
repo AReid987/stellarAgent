@@ -46,24 +46,7 @@ def test_create_completion_valid():
     assert response_json["model"] == "gpt-3"
 
 
-def test_read_root():
-    response = client.get("/")
-    assert response.status_code == 200
-    assert response.json() == {"message": "Welcome to StellarAgent AI Gateway"}
-
-
-client = TestClient(main.app)
-
-
-@patch.dict(
-    os.environ, {"PORTKEY_API_KEY": "test_key", "PORTKEY_CONFIG": "test_config"}
-)
-def test_create_completion_valid():
-    response = client.post(
-        "/v1/completions", json={"prompt": "Hello", "model": "gpt-3"}
-    )
-    assert response.status_code == 200
-    assert "choices" in response.json()
+# Removed redundant test
 
 
 def test_read_root():

@@ -1,5 +1,7 @@
 # Dependencies:
 # uv add pytest-mock
+from src.portkey.portkey_client import PortkeyClient
+from ..tests.test_main import portkey_client
 # uv pip compile pyproject.toml
 # uv pip install -r requirments.txt
 import pytest
