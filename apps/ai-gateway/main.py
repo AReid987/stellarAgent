@@ -10,6 +10,7 @@ app = FastAPI(title="AI Gateway")
 class PromptRequest(BaseModel):
     prompt: str
     model: str = None  # Optional model name
+    # config should default to the environment variable unless overridden AI!
     config: str = None # Optional config ID for Portkey
     metadata: dict = None # Optional metadata for Portkey
     trace_id: str = None
@@ -44,10 +45,10 @@ async def create_completion(request: PromptRequest):
         
         # Send the request to Portkey for completion.
         portkey_client = PortkeyClient()
+
         response = portkey_client.chat_completion(
             messages=messages,
             model_name=request.model,  # Portkey can use this for routing if configured
-            metadata=request.metadata,
             config=request.config,
             metadata=request.metadata,
             span_id=request.span_id,
