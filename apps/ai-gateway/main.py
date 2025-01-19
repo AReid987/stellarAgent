@@ -41,9 +41,9 @@ async def create_completion(request: PromptRequest):
         # Format the message for Portkey
         messages = [{"role": "user", "content": request.prompt}]
         
-        # Get completion from Portkey client.
-        # Portkey will handle caching, fallbacks, and retries based on its configuration.
-        response, from_cache = portkey_client.chat_completion(
+        # Send the request to Portkey for completion.
+        portkey_client = PortkeyClient()
+        response = portkey_client.chat_completion(
             messages=messages,
             model_name=request.model,  # Portkey can use this for routing if configured
             config_id=request.config,
