@@ -139,7 +139,7 @@ frozenlist==1.5.0
     #   aider-chat
     #   aiohttp
     #   aiosignal
-fsspec==2024.6.1
+fsspec==2024.12.0
     # via
     #   aider-chat
     #   huggingface-hub
