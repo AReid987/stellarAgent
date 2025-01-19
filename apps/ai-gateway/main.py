@@ -5,7 +5,6 @@ from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 from src.portkey.portkey_client import PortkeyClient
 
-portkey_client = PortkeyClient()
 
 app = FastAPI(title="AI Gateway")
 
@@ -42,6 +41,7 @@ async def create_completion(request: PromptRequest):
         HTTPException: If there's an error communicating with Portkey
     """
     try:
+        portkey_client = PortkeyClient()
         # Format the message for Portkey
         messages = [{"role": "user", "content": request.prompt}]
         
