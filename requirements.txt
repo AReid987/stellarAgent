@@ -174,7 +174,7 @@ google-auth==2.37.0
     #   google-generativeai
 google-auth-httplib2==0.2.0
     # via google-api-python-client
-google-generativeai==0.7.2
+google-generativeai==0.8.3
     # via open-interpreter
 googleapis-common-protos==1.66.0
     # via
