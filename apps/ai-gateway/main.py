@@ -1,6 +1,7 @@
 
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
+from src.portkey.portkey_client import PortkeyClient
 
 
 app = FastAPI(title="AI Gateway")
