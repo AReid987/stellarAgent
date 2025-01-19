@@ -1,2 +1,2 @@
 [console_scripts]
-ai-gateway = tui:run
+ai-gateway = main:main

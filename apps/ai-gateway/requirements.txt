@@ -44,6 +44,8 @@ click==8.1.8
     #   uvicorn
 configparser==7.1.0
     # via aider
+coverage==7.6.10
+    # via pytest-cov
 distro==1.9.0
     # via portkey-ai
 dnspython==2.7.0
@@ -112,7 +114,9 @@ multidict==6.1.0
     #   aiohttp
     #   yarl
 packaging==24.2
-    # via pytest
+    # via
+    #   ai-gateway (pyproject.toml)
+    #   pytest
 platformdirs==4.3.6
     # via textual
 playwright==1.49.1
@@ -144,6 +148,13 @@ pygments==2.19.1
 pynacl==1.5.0
     # via stellar-sdk
 pytest==8.3.4
+    # via
+    #   ai-gateway (pyproject.toml)
+    #   pytest-cov
+    #   pytest-mock
+pytest-cov==6.0.0
+    # via ai-gateway (pyproject.toml)
+pytest-mock==3.14.0
     # via ai-gateway (pyproject.toml)
 python-dateutil==2.9.0.post0
     # via posthog

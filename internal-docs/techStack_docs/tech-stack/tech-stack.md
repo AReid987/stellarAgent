@@ -1,9 +1,9 @@
 # Tech Stack Docs
 
 /**************************************************************
- *         File: tech-stack.md
- *         Author: A.Reid
- *         Date: 1/8/2025
+*         File: tech-stack.md
+*         Author: A.Reid
+*         Date: 1/8/2025
 > [!info] Description \
 > The Libraries, Packages and Technnologies \
 > discovered, used, or abandoned in the     \

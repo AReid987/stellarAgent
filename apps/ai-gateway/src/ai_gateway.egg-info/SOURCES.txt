@@ -22,7 +22,9 @@ __pycache__/tui.cpython-312.pyc
 docs/plan-ai-gateway-tui.md
 src/__init__.py
 src/tui.py
+src/tui.tcss
 src/__pycache__/__init__.cpython-312.pyc
+src/__pycache__/tui.cpython-312.pyc
 src/ai_gateway.egg-info/PKG-INFO
 src/ai_gateway.egg-info/SOURCES.txt
 src/ai_gateway.egg-info/dependency_links.txt
@@ -34,3 +36,4 @@ src/portkey/portkey_client.py
 src/portkey/__pycache__/__init__.cpython-312.pyc
 src/portkey/__pycache__/portkey_client.cpython-312.pyc
 src/trigger/example.ts
+tests/test_ai_gateway.py

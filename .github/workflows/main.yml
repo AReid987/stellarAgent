@@ -28,22 +28,35 @@ permissions:
   pull-requests: write
 
 jobs:
-  coverage:
+  build:
+    name: Build and Test
+    timeout-minutes: 15
     runs-on: ubuntu-latest
+    env: 
+      TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
+      TURBO_TEAM: ${{ vars.TURBO_TEAM }}
     steps:
       - name: Checkout
-        uses: actions/checkout@v4.2.2
+        uses: actions/checkout@85e6279cec87321a52edac9c87bce653a07cf6c2
         with:
-          # Checkout pull request head so that a commit can be made
-          ref: ${{ github.event.pull_request.head.ref }}
+          fetch-depth: 2
+      
+      - name: Cache turbo build setup
+        uses: actions/cache@v4
+        with: 
+          path: .turbo
+          key: ${{ runner.os }}-turbo-${{ github.sha }}
+          restore-keys: |
+            ${{ runner.os }}-turbo-
+
       
       - name: Setup pnpm
-        uses: pnpm/action-setup@v3
+        uses: pnpm/action-setup@e303250a2450c28e843bf798954fac81d4835f68
         with:
           version: latest
       
       - name: Setup Node.js environment
-        uses: actions/setup-node@v4.1.0
+        uses: actions/setup-node@8f9cc178b6e843639351e0bd5d638e5fd0a8dec7
         with:
           node-version: 22
           cache: 'pnpm'
@@ -52,36 +65,40 @@ jobs:
         run: |
           pnpm install -w
           pnpm add -D jest-junit
+
+      - name: Build
+        run: pnpm build
       
-      # Begin install-action snippet
-      #
-      - name: Install AppMap tools
-        id: install-appmap
-        uses: getappmap/install-action@v1
-        with:
-          project-type: pip
-          build-patch-file: false
-      - name: Commit changes
-        uses: EndBug/add-and-commit@v9
-      #
-      # End install-action snippet
+      # # Begin install-action snippet
+      # #
+      # - name: Install AppMap tools
+      #   id: install-appmap
+      #   uses: getappmap/install-action@e03d1221532d7024300b06ba85aef35661f59f09
+      #   with:
+      #     project-type: pip
+      #     build-patch-file: false
+
+      # - name: Commit changes
+      #   uses: EndBug/add-and-commit@a604fba70a846a0ea59e6040ef8a4a4f95015772
+      # #
+      # # End install-action snippet
 
       - name: Run tests with coverage
         run: |
           JEST_JUNIT_CLASSNAME="{filepath}" pnpm test -- --coverage --coverageReporters=json-summary --reporters=jest-junit
 
-      - name: Archive AppMaps
-        uses: getappmap/archive-action@v1
-        with:
-          revision: ${{ github.event.pull_request.base.sha }}
+      # - name: Archive AppMaps
+      #   uses: getappmap/archive-action@81f51177646dd89a505299dc31d034defa68f347
+      #   with:
+      #     revision: ${{ github.event.pull_request.base.sha }}
       
       - name: Upload coverage to Codecov
-        uses: codecov/codecov-action@v3
+        uses: codecov/codecov-action@25fe46e17d692bac1908f2f457f98d2c936d894d
         with:
           files: coverage/coverage-summary.json
 
       - name: Upload test results to Codecov
         if: ${{ !cancelled() }}
-        uses: codecov/test-results-action@v1
+        uses: codecov/test-results-action@4e79e65778be1cecd5df25e14af1eafb6df80ea9
         with:
           token: ${{ secrets.CODECOV_TOKEN }}

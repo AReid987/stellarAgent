@@ -4,8 +4,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "test": "pytest",
-    "test:cov": "pytest --cov=. --cov-report=html",
+    "test": "source .venv/bin/activate && pytest",
+    "test:cov": "source .venv/bin/activate pytest --cov=. --cov-report=html",
     "lint": "ruff check . && ruff format --check",
     "dev": "uvicorn main:app --reload",
     "compile:deps": "source .venv/bin/activate && uv pip compile pyproject.toml -o requirements.txt",
