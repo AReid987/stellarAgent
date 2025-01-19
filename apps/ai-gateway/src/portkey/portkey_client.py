@@ -10,15 +10,16 @@ class PortkeyClient:
         self.portkey = Portkey(
             api_key = os.getenv("PORTKEY_API_KEY"),
             config = os.getenv("PORTKEY_CONFIG"),
-            traceId = "",
-            spanId = "",
-            spanName = "",
         )
 
-    def chat_completion(self, messages, model_name=None):
+    def chat_completion(self, messages, model_name=None, config_id=None, metadata=None, span_id=None, span_name=None):
         response = self.portkey.chat.completions.create(
             messages = messages,
             model = model_name, #Optional model name
+            config = config_id,
+            metadata = metadata,
+            traceId = span_id, 
+            spanName = span_name,
         )
 
         return response.choices[0].message.content
