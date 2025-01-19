@@ -51,7 +51,7 @@ bracex==2.5.post1
     # via wcmatch
 cachetools==5.5.0
     # via google-auth
-certifi==2024.7.4
+certifi==2024.12.14
     # via
     #   aider-chat
     #   httpcore
