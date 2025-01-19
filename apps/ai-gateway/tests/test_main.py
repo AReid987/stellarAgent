@@ -28,7 +28,7 @@ def test_read_root():
     assert response.json() == {"message": "Welcome to StellarAgent AI Gateway"}
 
 
-client = TestClient(app)
+client = TestClient(main.app)
 
 
 @patch.dict(
