@@ -7,25 +7,25 @@ on:
       - main
   merge_group:
   # Run weekly, so that the baseline AppMap artifact does not expire.
-  schedule:
-    - cron: '0 0 * * 0'
+#   # schedule:
+#   #   - cron: '0 0 * * 0'
 
-permissions:
-  # Read the baseline artifact in order to perform
-  # the AppMap comparison.
-  actions: read
+# permissions:
+#   # Read the baseline artifact in order to perform
+#   # the AppMap comparison.
+#   actions: read
 
-  # Commit the AppMap configuration.
-  # If the EndBug/add-and-commit is removed,
-  # this can be changed to 'read'.
-  contents: write
+#   # Commit the AppMap configuration.
+#   # If the EndBug/add-and-commit is removed,
+#   # this can be changed to 'read'.
+#   contents: write
 
-  # Add check annotations to the source code when
-  # a problem is detected.
-  checks: write
+#   # Add check annotations to the source code when
+#   # a problem is detected.
+#   checks: write
 
-  # Add a comment to the pull request.
-  pull-requests: write
+#   # Add a comment to the pull request.
+#   pull-requests: write
 
 jobs:
   build:
@@ -37,7 +37,7 @@ jobs:
       TURBO_TEAM: ${{ vars.TURBO_TEAM }}
     steps:
       - name: Checkout
-        uses: actions/checkout@85e6279cec87321a52edac9c87bce653a07cf6c2
+        uses: actions/checkout@v4.2.2
         with:
           fetch-depth: 2
       
@@ -99,6 +99,6 @@ jobs:
 
       - name: Upload test results to Codecov
         if: ${{ !cancelled() }}
-        uses: codecov/test-results-action@v.1.0.2
+        uses: codecov/test-results-action@v1.0.2
         with:
           token: ${{ secrets.CODECOV_TOKEN }}

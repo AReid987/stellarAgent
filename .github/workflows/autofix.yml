@@ -12,18 +12,20 @@ jobs:
   autofix:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@85e6279cec87321a52edac9c87bce653a07cf6c2
+      - uses: actions/checkout@v4.2.2
 
       # Setup Node.js and pnpm
-      - name: Setup Node.js
-        uses: actions/setup-node@8f9cc178b6e843639351e0bd5d638e5fd0a8dec7
-        with:
-          node-version: '20'
-
       - name: Install pnpm
-        uses: pnpm/action-setup@e303250a2450c28e843bf798954fac81d4835f68
+        uses: pnpm/action-setup@v4.0.0
         with:
           version: latest
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4.1.1
+        with:
+          node-version: '22'
+          cache: 'pnpm'
+
 
       # Install dependencies
       - name: Install dependencies
@@ -31,12 +33,12 @@ jobs:
 
       # Setup Python
       - name: Install Python 3.12
-        uses: actions/setup-python@v1928ae624dc06094d8c65f021a4700ea8fa56b9d
+        uses: actions/setup-python@v5.3.0
         with:
           python-version: '3.12'
-
+      
       # Run Turbo tasks for linting and formatting
       - name: Lint and Format
         run: pnpm turbo run lint:fix
         
-      - uses: autofix-ci/action@551dded8c6cc8a1054039c8bc0b8b48c51dfc6ef
+      - uses: autofix-ci/action@v1.3..1
