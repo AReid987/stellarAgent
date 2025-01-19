@@ -2,7 +2,7 @@
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 from src.portkey.portkey_client import PortkeyClient
-
+import os
 
 app = FastAPI(title="AI Gateway")
 
@@ -10,7 +10,7 @@ app = FastAPI(title="AI Gateway")
 class PromptRequest(BaseModel):
     prompt: str
     model: str = None  # Optional model name
-    config: str = None # Optional config ID for Portkey
+    config: str = os.getenv("PORTKEY_CONFIG") # Optional config ID for Portkey
     metadata: dict = None # Optional metadata for Portkey
     trace_id: str = None
     span_id: str = None
