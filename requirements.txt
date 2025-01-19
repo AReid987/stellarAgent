@@ -265,7 +265,7 @@ joblib==1.4.2
     # via
     #   nltk
     #   scikit-learn
-json5==0.9.25
+json5==0.10.0
     # via aider-chat
 jsonschema==4.23.0
     # via
