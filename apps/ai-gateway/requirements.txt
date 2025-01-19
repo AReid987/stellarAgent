@@ -182,7 +182,7 @@ sniffio==1.3.1
     # via
     #   anyio
     #   portkey-ai
-starlette==0.41.3
+starlette==0.45.2
     # via fastapi
 stellar-sdk==12.1.0
     # via ai-gateway (pyproject.toml)
