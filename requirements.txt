@@ -42,7 +42,7 @@ beautifulsoup4==4.12.3
     # via aider-chat
 blessed==1.20.0
     # via inquirer
-boltons==21.0.0
+boltons==24.1.0
     # via
     #   face
     #   glom
