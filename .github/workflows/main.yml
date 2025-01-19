@@ -76,7 +76,7 @@ jobs:
           revision: ${{ github.event.pull_request.base.sha }}
       
       - name: Upload coverage to Codecov
-        uses: codecov/codecov-action@v3
+        uses: codecov/codecov-action@v5
         with:
           files: coverage/coverage-summary.json
 
