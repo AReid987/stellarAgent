@@ -163,7 +163,7 @@ google-api-core==2.24.0
     #   google-ai-generativelanguage
     #   google-api-python-client
     #   google-generativeai
-google-api-python-client==2.156.0
+google-api-python-client==2.159.0
     # via google-generativeai
 google-auth==2.37.0
     # via
