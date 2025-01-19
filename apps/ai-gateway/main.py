@@ -55,13 +55,9 @@ async def create_completion(request: PromptRequest):
             trace_id=request.trace_id,
         )
 
-        if from_cache:
-            # Return the cached response
-            return {"choices": [{"message": {"role": "assistant", "content": response}}]}
-        else:
-            # Logic to call Not Diamond (replace with actual Not Diamond client call)
-            # For now, let's just return a placeholder response
-            return {"choices": [{"message": {"role": "assistant", "content": f"Response from Not Diamond for prompt: {request.prompt}"}}]}
+        # Logic to call Not Diamond (replace with actual Not Diamond client call)
+        # For now, let's just return a placeholder response
+        return {"choices": [{"message": {"role": "assistant", "content": f"Response from Not Diamond for prompt: {request.prompt}"}}]}
         # Return the response in a standardized format
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
