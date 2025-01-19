@@ -246,7 +246,7 @@ ipython==8.30.0
     #   ipywidgets
 ipywidgets==8.1.5
     # via open-interpreter
-janus==1.2.0
+janus==2.0.0
     # via open-interpreter
 jedi==0.19.2
     # via ipython
