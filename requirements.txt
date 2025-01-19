@@ -99,7 +99,7 @@ decorator==5.1.1
     # via ipython
 defusedxml==0.7.1
     # via semgrep
-diff-match-patch==20230430
+diff-match-patch==20241021
     # via aider-chat
 diskcache==5.6.3
     # via aider-chat
