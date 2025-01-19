@@ -63,7 +63,7 @@ cffi==1.17.1
     #   aider-chat
     #   sounddevice
     #   soundfile
-charset-normalizer==3.3.2
+charset-normalizer==3.4.1
     # via
     #   aider-chat
     #   requests
