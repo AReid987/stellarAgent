@@ -3,6 +3,7 @@ import sys
 from unittest.mock import patch
 
 from fastapi.testclient import TestClient
+from src.portkey.portkey_client import PortkeyClient
 
 # Add the parent directory to the sys path to import the main module
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
@@ -46,3 +47,8 @@ def test_read_root():
     response = client.get("/")
     assert response.status_code == 200
     assert response.json() == {"message": "Welcome to StellarAgent AI Gateway"}
+import pytest
+
+@pytest.fixture
+def portkey_client():
+    return PortkeyClient()
