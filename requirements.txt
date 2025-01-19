@@ -134,7 +134,7 @@ flake8==7.1.1
     # via aider-chat
 fonttools==4.55.3
     # via matplotlib
-frozenlist==1.4.1
+frozenlist==1.5.0
     # via
     #   aider-chat
     #   aiohttp
