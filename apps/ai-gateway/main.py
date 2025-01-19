@@ -41,7 +41,6 @@ async def create_completion(request: PromptRequest):
         HTTPException: If there's an error communicating with Portkey
     """
     try:
-        portkey_client = PortkeyClient()
         # Format the message for Portkey
         messages = [{"role": "user", "content": request.prompt}]
         
