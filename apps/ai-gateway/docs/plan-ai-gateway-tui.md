@@ -6,48 +6,48 @@ This document outlines a plan for developing an AI Gateway with a Textual User I
 
 ## Goals
 
-*   Provide a unified API for accessing multiple AI models.
-*   Implement a TUI for easy management and monitoring.
-*   Incorporate features for reliability and performance, such as caching, load balancing, and automatic retries.
-*   Enable prompt optimization and intelligent model routing.
-*   Ensure observability of the gateway's operations.
+* Provide a unified API for accessing multiple AI models.
+* Implement a TUI for easy management and monitoring.
+* Incorporate features for reliability and performance, such as caching, load balancing, and automatic retries.
+* Enable prompt optimization and intelligent model routing.
+* Ensure observability of the gateway's operations.
 
 ## Architecture
 
 The AI Gateway will consist of the following components:
 
-*   **TUI:** Built using the Textual library, providing an interactive command-line interface for users.
-*   **API Gateway:**  Handles incoming requests and routes them to the appropriate AI models.
-*   **Caching Layer:**  Stores responses to frequently accessed prompts to reduce latency and cost.
-*   **Load Balancer:** Distributes traffic across multiple instances of AI models or gateway components.
-*   **Fallback Mechanism:**  Provides alternative models or services in case of failures.
-*   **Retry Mechanism:** Automatically retries failed requests.
-*   **Prompt Optimization Module:**  Allows for experimentation and optimization of prompts.
-*   **Intelligent Model Routing:**  Directs requests to the most suitable model based on factors like cost, performance, and context.
-*   **Observability Tools:**  Provides metrics, logs, and tracing for monitoring the gateway's health and performance.
+* **TUI:** Built using the Textual library, providing an interactive command-line interface for users.
+* **API Gateway:**  Handles incoming requests and routes them to the appropriate AI models.
+* **Caching Layer:**  Stores responses to frequently accessed prompts to reduce latency and cost.
+* **Load Balancer:** Distributes traffic across multiple instances of AI models or gateway components.
+* **Fallback Mechanism:**  Provides alternative models or services in case of failures.
+* **Retry Mechanism:** Automatically retries failed requests.
+* **Prompt Optimization Module:**  Allows for experimentation and optimization of prompts.
+* **Intelligent Model Routing:**  Directs requests to the most suitable model based on factors like cost, performance, and context.
+* **Observability Tools:**  Provides metrics, logs, and tracing for monitoring the gateway's health and performance.
 
 ## Key Features
 
-*   **Unified AI API:** A single endpoint for accessing different AI models, simplifying integration for client applications.
-*   **Textual User Interface (TUI):** An interactive command-line interface for managing the gateway, viewing logs, and configuring settings.
-*   **Caching:**  Improves performance and reduces costs by storing and reusing responses to common prompts.
-*   **Load Balancing:** Ensures high availability and optimal resource utilization by distributing traffic.
-*   **Fallbacks:**  Enhances reliability by automatically switching to alternative models or services when primary ones are unavailable.
-*   **Automatic Retries:**  Improves resilience by automatically retrying failed requests.
-*   **Prompt Optimization:**  Tools and features to experiment with and optimize prompts for better results and cost efficiency.
-*   **Intelligent Model Routing:**  Dynamically routes requests to the most appropriate AI model based on predefined rules or real-time analysis.
-*   **Observability:**  Comprehensive monitoring and logging capabilities to track the gateway's performance and identify potential issues.
+* **Unified AI API:** A single endpoint for accessing different AI models, simplifying integration for client applications.
+* **Textual User Interface (TUI):** An interactive command-line interface for managing the gateway, viewing logs, and configuring settings.
+* **Caching:**  Improves performance and reduces costs by storing and reusing responses to common prompts.
+* **Load Balancing:** Ensures high availability and optimal resource utilization by distributing traffic.
+* **Fallbacks:**  Enhances reliability by automatically switching to alternative models or services when primary ones are unavailable.
+* **Automatic Retries:**  Improves resilience by automatically retrying failed requests.
+* **Prompt Optimization:**  Tools and features to experiment with and optimize prompts for better results and cost efficiency.
+* **Intelligent Model Routing:**  Dynamically routes requests to the most appropriate AI model based on predefined rules or real-time analysis.
+* **Observability:**  Comprehensive monitoring and logging capabilities to track the gateway's performance and identify potential issues.
 
 ## Technology Stack
 
-*   **TUI Framework:** Textual
-*   **API Gateway:**  (e.g., FastAPI, Flask)
-*   **AI Model Integration:** Portkey
-*   **Prompt Management & Evaluation:** Promptfoo
-*   **Observability:** Opik
-*   **Caching:** (e.g., Redis, Memcached)
-*   **Load Balancer:** (e.g., Nginx, HAProxy)
-*   **Programming Language:** Python
+* **TUI Framework:** Textual
+* **API Gateway:**  (e.g., FastAPI, Flask)
+* **AI Model Integration:** Portkey
+* **Prompt Management & Evaluation:** Promptfoo
+* **Observability:** Opik
+* **Caching:** (e.g., Redis, Memcached)
+* **Load Balancer:** (e.g., Nginx, HAProxy)
+* **Programming Language:** Python
 
 ## Implementation Details
 
@@ -64,8 +64,8 @@ The AI Gateway will consist of the following components:
 
 ## Future Considerations
 
-*   **User Authentication and Authorization:** Secure access to the AI Gateway.
-*   **Rate Limiting:** Protect against abuse and ensure fair usage.
-*   **Advanced Prompt Engineering Features:** More sophisticated tools for prompt creation and management.
-*   **Support for more AI models and services.**
-*   **Plugin architecture:** Allow for extending the gateway's functionality.
+* **User Authentication and Authorization:** Secure access to the AI Gateway.
+* **Rate Limiting:** Protect against abuse and ensure fair usage.
+* **Advanced Prompt Engineering Features:** More sophisticated tools for prompt creation and management.
+* **Support for more AI models and services.**
+* **Plugin architecture:** Allow for extending the gateway's functionality.

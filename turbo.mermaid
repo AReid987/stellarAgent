@@ -1,0 +1,13 @@
+graph TD
+	QHZT("@stellar-agent/ai-gateway#build") --> ETTT("___ROOT___")
+	JEGP("@stellar-agent/docs#build") --> EMLE("@stellar-agent/eslint-config#build")
+	JEGP("@stellar-agent/docs#build") --> LRHC("@stellar-agent/typescript-config#build")
+	JEGP("@stellar-agent/docs#build") --> GLAO("@stellar-agent/ui#build")
+	EMLE("@stellar-agent/eslint-config#build") --> ETTT("___ROOT___")
+	VELR("@stellar-agent/stellar-rpc#build") --> ETTT("___ROOT___")
+	LRHC("@stellar-agent/typescript-config#build") --> ETTT("___ROOT___")
+	GLAO("@stellar-agent/ui#build") --> EMLE("@stellar-agent/eslint-config#build")
+	GLAO("@stellar-agent/ui#build") --> LRHC("@stellar-agent/typescript-config#build")
+	TXWC("@stellar-agent/web#build") --> EMLE("@stellar-agent/eslint-config#build")
+	TXWC("@stellar-agent/web#build") --> LRHC("@stellar-agent/typescript-config#build")
+	TXWC("@stellar-agent/web#build") --> GLAO("@stellar-agent/ui#build")

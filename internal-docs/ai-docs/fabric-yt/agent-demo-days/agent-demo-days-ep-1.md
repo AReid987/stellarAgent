@@ -2,7 +2,7 @@
 The content features Nater and Nema hosting the first episode of AI Agent Demo Days, showcasing various AI agent projects. The event had over 100 submissions, with 12 handpicked presenters. Participants included Kelly from opencore AI, Jang from arto, Aaron from closing WTF, Aon from pil Zumi, Ross from nonos, Samal from tal protocol, and others. Each presenter demonstrated their unique AI agents and discussed their tech stacks, challenges, and future plans. The event also included a contest for viewers to vote on their favorite submissions.
 
 **IDEAS:**
-1. Kelly's opencore AI agent automates social media lead generation by replying to tweets and promoting products.
+
 2. Jang's arto AI agent evaluates and curates NFTs, aiming to own a CryptoPunk one day.
 3. Aaron's closing WTF agent analyzes mortgage documents to help users understand and optimize their loans.
 4. Aon's pil Zumi focuses on creating dynamic and realistic social media agents with personalized interactions.

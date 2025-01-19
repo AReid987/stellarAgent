@@ -62,7 +62,7 @@
 ### DSPy
 
 = Prompts as Code
-- Prompt Optimization via compiled modules
+
 - Caching
 - Evaluations & Benchmarking
 

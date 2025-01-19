@@ -2,7 +2,7 @@
 
 The video discusses the updated LTX video model version 0.9.1, its improvements, and how to use it with ComfyUI for generating AI videos.
 
-## IDEAS:
+## IDEAS
 
 - LTX video model 0.9.1 is updated and smaller in size.
 - The new model improves text prompt instruction following.
@@ -30,7 +30,7 @@ The video discusses the updated LTX video model version 0.9.1, its improvements,
 - Christmas and Santa movie scenes were tested with the model.
 - The update focuses on better motion and prompt following.
 
-## INSIGHTS:
+## INSIGHTS
 
 - The LTX video model 0.9.1 offers enhanced text prompt following.
 - STG guidance significantly improves video quality and consistency.
@@ -43,7 +43,7 @@ The video discusses the updated LTX video model version 0.9.1, its improvements,
 - Example workflows in GitHub repositories aid user learning.
 - The model's consumer-friendly nature makes local AI feasible.
 
-## QUOTES:
+## QUOTES
 
 - "The benefit of that is the text prompt instruction following has been improved."
 - "STG guidance which is again another technique for latent image or latent data guidance."
@@ -66,7 +66,7 @@ The video discusses the updated LTX video model version 0.9.1, its improvements,
 - "The guy has very consistent style, the backpack looks dirty and all the mud and dust there looks pretty good."
 - "The output is amazing as you see you're editing the guy walking with the same motions."
 
-## HABITS:
+## HABITS
 
 - Regularly updates and tests new AI model versions.
 - Uses ComfyUI manager for handling updates and downloads.
@@ -89,7 +89,7 @@ The video discusses the updated LTX video model version 0.9.1, its improvements,
 - Ensures the model supports diverse styles and editing.
 - Tests the model with various scenes and prompts.
 
-## FACTS:
+## FACTS
 
 - LTX video model 0.9.1 is an updated version.
 - The model size is reduced to about 6 GB.
@@ -113,7 +113,7 @@ The video discusses the updated LTX video model version 0.9.1, its improvements,
 - Customizing settings can improve or worsen video outcomes.
 - The model files are available on the Hugging Face page.
 
-## REFERENCES:
+## REFERENCES
 
 - LTX video model
 - ComfyUI
