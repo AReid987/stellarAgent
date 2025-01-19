@@ -10,7 +10,6 @@ app = FastAPI(title="AI Gateway")
 class PromptRequest(BaseModel):
     prompt: str
     model: str = None  # Optional model name
-    # config should default to the environment variable unless overridden AI!
     config: str = None # Optional config ID for Portkey
     metadata: dict = None # Optional metadata for Portkey
     trace_id: str = None
