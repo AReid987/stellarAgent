@@ -154,7 +154,7 @@ gitpython==3.1.44
     # via
     #   aider-chat
     #   git-python
-glom==22.1.0
+glom==24.11.0
     # via semgrep
 google-ai-generativelanguage==0.6.15
     # via google-generativeai
