@@ -124,7 +124,7 @@ fastapi==0.115.6
     # via open-interpreter
 fastapi-cli==0.0.7
     # via fastapi
-filelock==3.15.4
+filelock==3.16.1
     # via
     #   aider-chat
     #   huggingface-hub
