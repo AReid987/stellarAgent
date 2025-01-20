@@ -27,7 +27,7 @@ Requires-Dist: pytest-mock>=3.14.0
 
 ==========================================
 
-##  This Document Explains
+## This Document Explains
 
 - System Architecture
 - Information Flow
@@ -183,28 +183,28 @@ Requires-Dist: pytest-mock>=3.14.0
 
 ==========================================
 
-### FastAPI Gateway:
+### FastAPI Gateway
 
 - Acts as the entry point for all requests.
 - Handles authentication, rate limiting, and request validation.
 
-### Not Diamond:
+### Not Diamond
 
 - Responsible for intelligent routing.
 - Routes requests to the best-suited provider/model based on cost, accuracy, and task type.
 
-### Portkey:
+### Portkey
 
 - Handles caching and monitoring.
 - Caches responses to reduce costs and latency.
 - Tracks usage, latency, and errors for each provider.
 
-### Open Router:
+### Open Router
 
 - Treated as another provider in the load balancer.
 - Provides access to free and paid models, expanding your options.
 
-### Other Providers:
+### Other Providers
 
 - Mistral
 - Gemini

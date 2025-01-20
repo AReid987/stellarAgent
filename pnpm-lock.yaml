@@ -60,13 +60,7 @@ importers:
     devDependencies:
       '@trigger.dev/build':
         specifier: ^3.3.7
-<<<<<<< HEAD
         version: 3.3.11(typescript@5.7.3)
-
-  apps/beszel: {}
-=======
-        version: 3.3.11(typescript@5.7.2)
->>>>>>> ff531a6 (refactor: :recycle: move beszel out of ai-gateway, various refactors)
 
   apps/docs:
     dependencies:
@@ -140,11 +134,7 @@ importers:
         version: 7.26.0(@babel/core@7.26.0)
       '@codecov/nextjs-webpack-plugin':
         specifier: ^1.6.0
-<<<<<<< HEAD
-        version: 1.7.0(next@15.1.5(@babel/core@7.26.0)(@opentelemetry/api@1.9.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(webpack@5.97.1(@swc/core@1.10.4(@swc/helpers@0.5.15)))
-=======
         version: 1.7.0(next@15.1.5(@babel/core@7.26.0)(@opentelemetry/api@1.9.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(webpack@5.97.1(@swc/core@1.10.7(@swc/helpers@0.5.15)))
->>>>>>> ff531a6 (refactor: :recycle: move beszel out of ai-gateway, various refactors)
       '@stellar-agent/eslint-config':
         specifier: workspace:*
         version: link:../../packages/eslint-config
@@ -204,17 +194,10 @@ importers:
         version: 15.1.5
       '@typescript-eslint/eslint-plugin':
         specifier: ^8.15.0
-<<<<<<< HEAD
-        version: 8.19.0(@typescript-eslint/parser@8.19.0(eslint@9.17.0)(typescript@5.7.3))(eslint@9.17.0)(typescript@5.7.3)
+        version: 8.20.0(@typescript-eslint/parser@8.20.0(eslint@9.18.0)(typescript@5.7.3))(eslint@9.18.0)(typescript@5.7.3)
       '@typescript-eslint/parser':
         specifier: ^8.15.0
-        version: 8.19.0(eslint@9.17.0)(typescript@5.7.3)
-=======
-        version: 8.20.0(@typescript-eslint/parser@8.20.0(eslint@9.18.0)(typescript@5.7.2))(eslint@9.18.0)(typescript@5.7.2)
-      '@typescript-eslint/parser':
-        specifier: ^8.15.0
-        version: 8.20.0(eslint@9.18.0)(typescript@5.7.2)
->>>>>>> ff531a6 (refactor: :recycle: move beszel out of ai-gateway, various refactors)
+        version: 8.20.0(eslint@9.18.0)(typescript@5.7.3)
       eslint:
         specifier: ^9.15.0
         version: 9.18.0
@@ -241,13 +224,7 @@ importers:
         version: 5.7.3
       typescript-eslint:
         specifier: ^8.15.0
-<<<<<<< HEAD
-        version: 8.19.0(eslint@9.17.0)(typescript@5.7.3)
-=======
-        version: 8.20.0(eslint@9.18.0)(typescript@5.7.2)
->>>>>>> ff531a6 (refactor: :recycle: move beszel out of ai-gateway, various refactors)
-
-  packages/ingester: {}
+        version: 8.20.0(eslint@9.18.0)(typescript@5.7.3)
 
   packages/typescript-config: {}
 
@@ -6269,15 +6246,6 @@ snapshots:
       unplugin: 1.16.1
       zod: 3.24.1
 
-<<<<<<< HEAD
-  '@codecov/nextjs-webpack-plugin@1.7.0(next@15.1.5(@babel/core@7.26.0)(@opentelemetry/api@1.9.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(webpack@5.97.1(@swc/core@1.10.4(@swc/helpers@0.5.15)))':
-    dependencies:
-      '@codecov/bundler-plugin-core': 1.7.0
-      '@codecov/webpack-plugin': 1.7.0(webpack@5.97.1(@swc/core@1.10.4(@swc/helpers@0.5.15)))
-      next: 15.1.5(@babel/core@7.26.0)(@opentelemetry/api@1.9.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
-      unplugin: 1.16.0
-      webpack: 5.97.1(@swc/core@1.10.4(@swc/helpers@0.5.15))
-=======
   '@codecov/nextjs-webpack-plugin@1.7.0(next@15.1.5(@babel/core@7.26.0)(@opentelemetry/api@1.9.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(webpack@5.97.1(@swc/core@1.10.7(@swc/helpers@0.5.15)))':
     dependencies:
       '@codecov/bundler-plugin-core': 1.7.0
@@ -6285,7 +6253,6 @@ snapshots:
       next: 15.1.5(@babel/core@7.26.0)(@opentelemetry/api@1.9.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       unplugin: 1.16.1
       webpack: 5.97.1(@swc/core@1.10.7(@swc/helpers@0.5.15))
->>>>>>> ff531a6 (refactor: :recycle: move beszel out of ai-gateway, various refactors)
 
   '@codecov/webpack-plugin@1.7.0(webpack@5.97.1(@swc/core@1.10.7(@swc/helpers@0.5.15)))':
     dependencies:
@@ -7130,11 +7097,7 @@ snapshots:
 
   '@tootallnate/quickjs-emscripten@0.23.0': {}
 
-<<<<<<< HEAD
   '@trigger.dev/build@3.3.11(typescript@5.7.3)':
-=======
-  '@trigger.dev/build@3.3.11(typescript@5.7.2)':
->>>>>>> ff531a6 (refactor: :recycle: move beszel out of ai-gateway, various refactors)
     dependencies:
       '@trigger.dev/core': 3.3.11
       pkg-types: 1.3.1
@@ -7386,61 +7349,32 @@ snapshots:
 
   '@types/yoga-layout@1.9.2': {}
 
-<<<<<<< HEAD
-  '@typescript-eslint/eslint-plugin@8.19.0(@typescript-eslint/parser@8.19.0(eslint@9.17.0)(typescript@5.7.3))(eslint@9.17.0)(typescript@5.7.3)':
+  '@typescript-eslint/eslint-plugin@8.20.0(@typescript-eslint/parser@8.20.0(eslint@9.18.0)(typescript@5.7.3))(eslint@9.18.0)(typescript@5.7.3)':
     dependencies:
       '@eslint-community/regexpp': 4.12.1
-      '@typescript-eslint/parser': 8.19.0(eslint@9.17.0)(typescript@5.7.3)
-      '@typescript-eslint/scope-manager': 8.19.0
-      '@typescript-eslint/type-utils': 8.19.0(eslint@9.17.0)(typescript@5.7.3)
-      '@typescript-eslint/utils': 8.19.0(eslint@9.17.0)(typescript@5.7.3)
-      '@typescript-eslint/visitor-keys': 8.19.0
-      eslint: 9.17.0
-      graphemer: 1.4.0
-      ignore: 5.3.2
-      natural-compare: 1.4.0
-      ts-api-utils: 1.4.3(typescript@5.7.3)
-      typescript: 5.7.3
-    transitivePeerDependencies:
-      - supports-color
-
-  '@typescript-eslint/parser@8.19.0(eslint@9.17.0)(typescript@5.7.3)':
-    dependencies:
-      '@typescript-eslint/scope-manager': 8.19.0
-      '@typescript-eslint/types': 8.19.0
-      '@typescript-eslint/typescript-estree': 8.19.0(typescript@5.7.3)
-      '@typescript-eslint/visitor-keys': 8.19.0
-      debug: 4.4.0
-      eslint: 9.17.0
-      typescript: 5.7.3
-=======
-  '@typescript-eslint/eslint-plugin@8.20.0(@typescript-eslint/parser@8.20.0(eslint@9.18.0)(typescript@5.7.2))(eslint@9.18.0)(typescript@5.7.2)':
-    dependencies:
-      '@eslint-community/regexpp': 4.12.1
-      '@typescript-eslint/parser': 8.20.0(eslint@9.18.0)(typescript@5.7.2)
+      '@typescript-eslint/parser': 8.20.0(eslint@9.18.0)(typescript@5.7.3)
       '@typescript-eslint/scope-manager': 8.20.0
-      '@typescript-eslint/type-utils': 8.20.0(eslint@9.18.0)(typescript@5.7.2)
-      '@typescript-eslint/utils': 8.20.0(eslint@9.18.0)(typescript@5.7.2)
+      '@typescript-eslint/type-utils': 8.20.0(eslint@9.18.0)(typescript@5.7.3)
+      '@typescript-eslint/utils': 8.20.0(eslint@9.18.0)(typescript@5.7.3)
       '@typescript-eslint/visitor-keys': 8.20.0
       eslint: 9.18.0
       graphemer: 1.4.0
       ignore: 5.3.2
       natural-compare: 1.4.0
-      ts-api-utils: 2.0.0(typescript@5.7.2)
-      typescript: 5.7.2
+      ts-api-utils: 2.0.0(typescript@5.7.3)
+      typescript: 5.7.3
     transitivePeerDependencies:
       - supports-color
 
-  '@typescript-eslint/parser@8.20.0(eslint@9.18.0)(typescript@5.7.2)':
+  '@typescript-eslint/parser@8.20.0(eslint@9.18.0)(typescript@5.7.3)':
     dependencies:
       '@typescript-eslint/scope-manager': 8.20.0
       '@typescript-eslint/types': 8.20.0
-      '@typescript-eslint/typescript-estree': 8.20.0(typescript@5.7.2)
+      '@typescript-eslint/typescript-estree': 8.20.0(typescript@5.7.3)
       '@typescript-eslint/visitor-keys': 8.20.0
       debug: 4.4.0
       eslint: 9.18.0
-      typescript: 5.7.2
->>>>>>> ff531a6 (refactor: :recycle: move beszel out of ai-gateway, various refactors)
+      typescript: 5.7.3
     transitivePeerDependencies:
       - supports-color
 
@@ -7449,35 +7383,20 @@ snapshots:
       '@typescript-eslint/types': 8.20.0
       '@typescript-eslint/visitor-keys': 8.20.0
 
-<<<<<<< HEAD
-  '@typescript-eslint/type-utils@8.19.0(eslint@9.17.0)(typescript@5.7.3)':
+  '@typescript-eslint/type-utils@8.20.0(eslint@9.18.0)(typescript@5.7.3)':
     dependencies:
-      '@typescript-eslint/typescript-estree': 8.19.0(typescript@5.7.3)
-      '@typescript-eslint/utils': 8.19.0(eslint@9.17.0)(typescript@5.7.3)
-      debug: 4.4.0
-      eslint: 9.17.0
-      ts-api-utils: 1.4.3(typescript@5.7.3)
-      typescript: 5.7.3
-=======
-  '@typescript-eslint/type-utils@8.20.0(eslint@9.18.0)(typescript@5.7.2)':
-    dependencies:
-      '@typescript-eslint/typescript-estree': 8.20.0(typescript@5.7.2)
-      '@typescript-eslint/utils': 8.20.0(eslint@9.18.0)(typescript@5.7.2)
+      '@typescript-eslint/typescript-estree': 8.20.0(typescript@5.7.3)
+      '@typescript-eslint/utils': 8.20.0(eslint@9.18.0)(typescript@5.7.3)
       debug: 4.4.0
       eslint: 9.18.0
-      ts-api-utils: 2.0.0(typescript@5.7.2)
-      typescript: 5.7.2
->>>>>>> ff531a6 (refactor: :recycle: move beszel out of ai-gateway, various refactors)
+      ts-api-utils: 2.0.0(typescript@5.7.3)
+      typescript: 5.7.3
     transitivePeerDependencies:
       - supports-color
 
   '@typescript-eslint/types@8.20.0': {}
 
-<<<<<<< HEAD
-  '@typescript-eslint/typescript-estree@8.19.0(typescript@5.7.3)':
-=======
-  '@typescript-eslint/typescript-estree@8.20.0(typescript@5.7.2)':
->>>>>>> ff531a6 (refactor: :recycle: move beszel out of ai-gateway, various refactors)
+  '@typescript-eslint/typescript-estree@8.20.0(typescript@5.7.3)':
     dependencies:
       '@typescript-eslint/types': 8.20.0
       '@typescript-eslint/visitor-keys': 8.20.0
@@ -7486,35 +7405,19 @@ snapshots:
       is-glob: 4.0.3
       minimatch: 9.0.5
       semver: 7.6.3
-<<<<<<< HEAD
-      ts-api-utils: 1.4.3(typescript@5.7.3)
+      ts-api-utils: 2.0.0(typescript@5.7.3)
       typescript: 5.7.3
     transitivePeerDependencies:
       - supports-color
 
-  '@typescript-eslint/utils@8.19.0(eslint@9.17.0)(typescript@5.7.3)':
-    dependencies:
-      '@eslint-community/eslint-utils': 4.4.1(eslint@9.17.0)
-      '@typescript-eslint/scope-manager': 8.19.0
-      '@typescript-eslint/types': 8.19.0
-      '@typescript-eslint/typescript-estree': 8.19.0(typescript@5.7.3)
-      eslint: 9.17.0
-      typescript: 5.7.3
-=======
-      ts-api-utils: 2.0.0(typescript@5.7.2)
-      typescript: 5.7.2
-    transitivePeerDependencies:
-      - supports-color
-
-  '@typescript-eslint/utils@8.20.0(eslint@9.18.0)(typescript@5.7.2)':
+  '@typescript-eslint/utils@8.20.0(eslint@9.18.0)(typescript@5.7.3)':
     dependencies:
       '@eslint-community/eslint-utils': 4.4.1(eslint@9.18.0)
       '@typescript-eslint/scope-manager': 8.20.0
       '@typescript-eslint/types': 8.20.0
-      '@typescript-eslint/typescript-estree': 8.20.0(typescript@5.7.2)
+      '@typescript-eslint/typescript-estree': 8.20.0(typescript@5.7.3)
       eslint: 9.18.0
-      typescript: 5.7.2
->>>>>>> ff531a6 (refactor: :recycle: move beszel out of ai-gateway, various refactors)
+      typescript: 5.7.3
     transitivePeerDependencies:
       - supports-color
 
@@ -7904,16 +7807,6 @@ snapshots:
     dependencies:
       fill-range: 7.1.1
 
-<<<<<<< HEAD
-  browserslist@4.24.3:
-    dependencies:
-      caniuse-lite: 1.0.30001692
-      electron-to-chromium: 1.5.76
-      node-releases: 2.0.19
-      update-browserslist-db: 1.1.1(browserslist@4.24.3)
-
-=======
->>>>>>> ff531a6 (refactor: :recycle: move beszel out of ai-gateway, various refactors)
   browserslist@4.24.4:
     dependencies:
       caniuse-lite: 1.0.30001692
@@ -11360,11 +11253,7 @@ snapshots:
 
   trough@2.2.0: {}
 
-<<<<<<< HEAD
-  ts-api-utils@1.4.3(typescript@5.7.3):
-=======
-  ts-api-utils@2.0.0(typescript@5.7.2):
->>>>>>> ff531a6 (refactor: :recycle: move beszel out of ai-gateway, various refactors)
+  ts-api-utils@2.0.0(typescript@5.7.3):
     dependencies:
       typescript: 5.7.3
 
@@ -11476,23 +11365,13 @@ snapshots:
       possible-typed-array-names: 1.0.0
       reflect.getprototypeof: 1.0.10
 
-<<<<<<< HEAD
-  typescript-eslint@8.19.0(eslint@9.17.0)(typescript@5.7.3):
+  typescript-eslint@8.20.0(eslint@9.18.0)(typescript@5.7.3):
     dependencies:
-      '@typescript-eslint/eslint-plugin': 8.19.0(@typescript-eslint/parser@8.19.0(eslint@9.17.0)(typescript@5.7.3))(eslint@9.17.0)(typescript@5.7.3)
-      '@typescript-eslint/parser': 8.19.0(eslint@9.17.0)(typescript@5.7.3)
-      '@typescript-eslint/utils': 8.19.0(eslint@9.17.0)(typescript@5.7.3)
-      eslint: 9.17.0
-      typescript: 5.7.3
-=======
-  typescript-eslint@8.20.0(eslint@9.18.0)(typescript@5.7.2):
-    dependencies:
-      '@typescript-eslint/eslint-plugin': 8.20.0(@typescript-eslint/parser@8.20.0(eslint@9.18.0)(typescript@5.7.2))(eslint@9.18.0)(typescript@5.7.2)
-      '@typescript-eslint/parser': 8.20.0(eslint@9.18.0)(typescript@5.7.2)
-      '@typescript-eslint/utils': 8.20.0(eslint@9.18.0)(typescript@5.7.2)
+      '@typescript-eslint/eslint-plugin': 8.20.0(@typescript-eslint/parser@8.20.0(eslint@9.18.0)(typescript@5.7.3))(eslint@9.18.0)(typescript@5.7.3)
+      '@typescript-eslint/parser': 8.20.0(eslint@9.18.0)(typescript@5.7.3)
+      '@typescript-eslint/utils': 8.20.0(eslint@9.18.0)(typescript@5.7.3)
       eslint: 9.18.0
-      typescript: 5.7.2
->>>>>>> ff531a6 (refactor: :recycle: move beszel out of ai-gateway, various refactors)
+      typescript: 5.7.3
     transitivePeerDependencies:
       - supports-color
 

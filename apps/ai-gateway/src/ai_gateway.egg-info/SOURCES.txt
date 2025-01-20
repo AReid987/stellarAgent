@@ -1,3 +1,4 @@
+.coverage
 .dockerignore
 .gitignore
 .python-version
@@ -18,11 +19,11 @@ uv.lock
 .devcontainer/devcontainer.json
 __pycache__/__init__.cpython-312.pyc
 __pycache__/main.cpython-312.pyc
+__pycache__/test_main.cpython-312-pytest-8.3.4.pyc
+__pycache__/test_portkey_client.cpython-312-pytest-8.3.4.pyc
 __pycache__/tui.cpython-312.pyc
 docs/plan-ai-gateway-tui.md
 src/__init__.py
-src/tui.py
-src/tui.tcss
 src/__pycache__/__init__.cpython-312.pyc
 src/__pycache__/tui.cpython-312.pyc
 src/ai_gateway.egg-info/PKG-INFO
@@ -36,4 +37,10 @@ src/portkey/portkey_client.py
 src/portkey/__pycache__/__init__.cpython-312.pyc
 src/portkey/__pycache__/portkey_client.cpython-312.pyc
 src/trigger/example.ts
+src/tui/__init__.py
+src/tui/layout01.py
+src/tui/tui.py
 tests/test_ai_gateway.py
+tests/test_main.py
+tests/__pycache__/test_ai_gateway.cpython-312-pytest-8.3.4.pyc
+tests/__pycache__/test_main.cpython-312-pytest-8.3.4.pyc
