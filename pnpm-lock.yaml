@@ -60,7 +60,9 @@ importers:
     devDependencies:
       '@trigger.dev/build':
         specifier: ^3.3.7
-        version: 3.3.11(typescript@5.7.3)
+        version: 3.3.11(typescript@5.7.2)
+
+  apps/browser-agent: {}
 
   apps/docs:
     dependencies:
@@ -202,8 +204,8 @@ importers:
         specifier: ^9.15.0
         version: 9.18.0
       eslint-config-prettier:
-        specifier: ^9.1.0
-        version: 9.1.0(eslint@9.18.0)
+        specifier: ^10.0.0
+        version: 10.0.1(eslint@9.18.0)
       eslint-plugin-only-warn:
         specifier: ^1.1.0
         version: 1.1.0
@@ -2649,8 +2651,8 @@ packages:
     engines: {node: '>=6.0'}
     hasBin: true
 
-  eslint-config-prettier@9.1.0:
-    resolution: {integrity: sha512-NSWl5BFQWEPi1j4TjVNItzYV7dZXZ+wP6I6ZhrBGpChQhZRUaElihE9uRRkcbRnNb76UMKDF3r+WTmNcGPKsqw==}
+  eslint-config-prettier@10.0.1:
+    resolution: {integrity: sha512-lZBts941cyJyeaooiKxAtzoPHTN+GbQTJFAIdQbRhA4/8whaAraEh47Whw/ZFfrjNSnlAxqfm9i0XVAEkULjCw==}
     hasBin: true
     peerDependencies:
       eslint: '>=7.0.0'
@@ -7097,12 +7099,12 @@ snapshots:
 
   '@tootallnate/quickjs-emscripten@0.23.0': {}
 
-  '@trigger.dev/build@3.3.11(typescript@5.7.3)':
+  '@trigger.dev/build@3.3.11(typescript@5.7.2)':
     dependencies:
       '@trigger.dev/core': 3.3.11
       pkg-types: 1.3.1
       tinyglobby: 0.2.10
-      tsconfck: 3.1.3(typescript@5.7.3)
+      tsconfck: 3.1.3(typescript@5.7.2)
     transitivePeerDependencies:
       - bufferutil
       - supports-color
@@ -8340,7 +8342,7 @@ snapshots:
     optionalDependencies:
       source-map: 0.6.1
 
-  eslint-config-prettier@9.1.0(eslint@9.18.0):
+  eslint-config-prettier@10.0.1(eslint@9.18.0):
     dependencies:
       eslint: 9.18.0
 
@@ -11279,9 +11281,9 @@ snapshots:
 
   tsafe@1.8.5: {}
 
-  tsconfck@3.1.3(typescript@5.7.3):
+  tsconfck@3.1.3(typescript@5.7.2):
     optionalDependencies:
-      typescript: 5.7.3
+      typescript: 5.7.2
 
   tslib@1.14.1: {}
 
