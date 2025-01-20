@@ -47,7 +47,7 @@ async def create_completion(request: PromptRequest):
 
         response = portkey_client.chat_completion(
             messages=messages,
-            # model_name=request.model,  # Portkey can use this for routing if configured
+            model_name=request.model,  # Portkey can use this for routing if configured
             config_id=request.config,
             metadata=request.metadata,
             span_id=request.span_id,
