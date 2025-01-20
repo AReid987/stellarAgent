@@ -9,7 +9,7 @@ app = FastAPI(title="AI Gateway")
 # Request model
 class PromptRequest(BaseModel):
     prompt: str
-    model: str = None  # Optional model name
+    model: str = "not-diamond-model"  # Set the model name to your Not Diamond model's identifier in Portkey
     config: str = os.getenv("PORTKEY_CONFIG") # Optional config ID for Portkey
     metadata: dict = None # Optional metadata for Portkey
     trace_id: str = None
