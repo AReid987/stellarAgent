@@ -230,7 +230,7 @@ idna==3.8
     #   requests
     #   trio
     #   yarl
-importlib-metadata==7.2.1
+importlib-metadata==8.6.1
     # via
     #   aider-chat
     #   litellm
