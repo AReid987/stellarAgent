@@ -94,20 +94,11 @@ async def create_completion(request: PromptRequest):
 
 
 def main():
-    # AI Use typer to start up the AI Gateway 
-    # AI It should start a CLI interface for users to select initial options for the AI Gateway
-    # AI The CLI should include options for:
-    # AI - FastAPI only
-    # AI - FastAPI + TUI
-    # AI - TUI only
-    # AI For later, we can add options for:
-    # AI - Aider Configurations
-    # AI - API Key Management
-    # AI - Logging
-    # AI - Working history AI!
-     
+    # Use typer to start up the AI Gateway
+    # It should start a CLI interface for users to select initial options for the AI Gateway
+      
     print("AI Gateway initialized with Portkey client!")
- 
+  
 
 if __name__ == "__main__":
     main()
