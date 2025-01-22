@@ -2,9 +2,31 @@
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 from src.portkey.portkey_client import PortkeyClient
+from apps.ai_gateway.src.not_diamond.not_diamond_client import NotDiamondClient
 import os
 
 app = FastAPI(title="AI Gateway")
+
+# existing code...
+
+@app.post("/chat/not-diamond-portkey")
+async def chat_with_not_diamond_portkey(request: PromptRequest):
+    try:
+        selected_model = NotDiamondClient().select_model()
+        response = PortkeyClient().chat_completion(
+            messages=[{"role": "user", "content": request.prompt}],
+            model_name=selected_model,  
+            config_id=request.config,
+            metadata=request.metadata,
+            span_id=request.span_id,
+            span_name=request.span_name,
+            trace_id=request.trace_id,
+        )
+        return {"response": response, "selected_model": selected_model}
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+# existing code...
 
 # Request model
 class PromptRequest(BaseModel):
