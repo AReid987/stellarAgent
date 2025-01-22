@@ -104,10 +104,10 @@ def main():
     # - Aider Configurations
     # - API Key Management
     # - Logging
-    # - Working history AI!
-    
+    # - Working history
+     
     print("AI Gateway initialized with Portkey client!")
-
+ 
 
 if __name__ == "__main__":
     main()
