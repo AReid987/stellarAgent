@@ -221,7 +221,7 @@ huggingface-hub==0.24.6
     #   timm
     #   tokenizers
     #   transformers
-idna==3.8
+idna==3.10
     # via
     #   aider-chat
     #   anyio
