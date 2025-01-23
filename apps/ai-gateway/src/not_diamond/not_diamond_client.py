@@ -4,11 +4,15 @@ class NotDiamondClient:
     def __init__(self):
         self.llm_providers = llm_providers
 
-    def select_model(self):
-        # Basic model selection: return the first model in the list
-        return self.llm_providers[0]
+    def select_model(self, messages):
+        """
+        Selects a model using Not Diamond's model_select method.
 
-not_diamond_client = NotDiamondClient()
+        Args:
+            messages (list): A list of message dictionaries for the conversation.
 
-if __name__ == "__main__":
-    print(f"Selected model: {not_diamond_client.select_model()}")
+        Returns:
+            str: The selected model provider.
+        """
+        session_id, provider = client.chat.completions.model_select(messages=messages, model=self.llm_providers)
+        return provider
