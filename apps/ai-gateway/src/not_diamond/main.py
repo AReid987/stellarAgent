@@ -1,5 +1,6 @@
 from notdiamond import NotDiamond
 
+from apps.ai_gateway.src.not_diamond.not_diamond_client import NotDiamondClient
 client = NotDiamond()
 
 llm_providers = [
@@ -45,10 +46,11 @@ llm_providers = [
     "together_ai/meta-llama/Llama-Vision-Free",
 ]
 
+def main():
+    not_diamond_client = NotDiamondClient()
+    messages = [{"role": "user", "content": "Write a python function to calculate the factorial of a number."}]
+    selected_model = not_diamond_client.select_model(messages=messages)
+    print(f"Selected model: {selected_model}")
 
-# AI Based on these docs https://docs.notdiamond.ai/docs/model_select-vs-create
-# AI and the fact that I want to use a custom set of models not explicitly listed in the docs
-# AI it seems that I would need to use the `model_select` method to select the best model
-# AI i am not sure if we need a set of training data to use this method
-# AI this section of the docs also seem to be useful and relevant to the use case of this ai gateway https://docs.notdiamond.ai/docs/real-time-personalization
-# Write the plan, then the tests, then the code to pass the tests and satisfy the plan AI!
+if __name__ == "__main__":
+    main()

@@ -1,19 +1,16 @@
-from not_diamond import NotDiamond
+import os
+from notdiamond import NotDiamond
+
+from apps.ai_gateway.src.not_diamond.main import llm_providers
 
 class NotDiamondClient:
     def __init__(self):
-        self.llm_providers = llm_providers
-        self.client = NotDiamond()
+        self.client = NotDiamond(
+            api_key=os.getenv("NOTDIAMOND_API_KEY"),
+        )
 
     def select_model(self, messages):
-        """
-        Selects a model using Not Diamond's model_select method.
-
-        Args:
-            messages (list): A list of message dictionaries for the conversation.
-
-        Returns:
-            str: The selected model provider.
-        """
-        session_id, provider = self.client.chat.completions.model_select(messages=messages, model=self.llm_providers)
+        session_id, provider = self.client.chat.completions.model_select(
+            messages=messages, model=llm_providers
+        )
         return provider
