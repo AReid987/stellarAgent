@@ -23,14 +23,17 @@ llm_providers = [
     "sambanova/Meta-Llama-3.1-405B-Instruct",
     "sambanova/Meta-Llama-3.1-70B-Instruct",
     "sambanova/Meta-Llama-3.1-8B-Instruct",
-    "sambanova/Meta-Llama-3.1-70B-Instruct", 
+    "sambanova/Meta-Llama-3.1-70B-Instruct",
     "sambanova/QwQ-32B-Preview",
     "sambanova/Qwen2.5-Coder-32B-Instruct",
     "groq/llama-3.3-70b-versatile",
     "groq/llama-3.3-70b-specdec",
     "groq/llama-3.2-11b-vision-preview",
-    "groq/mixtral-8x7b-32768",                        
-    "groq/llama-3.2-3b-preview"                      
+    "groq/mixtral-8x7b-32768",
+    "groq/llama-3.2-3b-preview",
+    "meta-llama/Llama-3.3-70B-Instruct-Turbo-Free",
+    "black-forest-labs/FLUX.1-schnell-Free",
+    "meta-llama/Llama-Vision-Free",
 ]
 
 # AI Based on these docs https://docs.notdiamond.ai/docs/model_select-vs-create
