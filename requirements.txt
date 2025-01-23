@@ -234,7 +234,7 @@ importlib-metadata==7.2.1
     # via
     #   aider-chat
     #   litellm
-importlib-resources==6.4.4
+importlib-resources==6.5.2
     # via aider-chat
 inquirer==3.4.0
     # via open-interpreter
