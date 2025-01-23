@@ -182,7 +182,7 @@ googleapis-common-protos==1.66.0
     #   grpcio-status
 grep-ast==0.4.1
     # via aider-chat
-grpcio==1.68.1
+grpcio==1.70.0
     # via
     #   google-api-core
     #   grpcio-status
