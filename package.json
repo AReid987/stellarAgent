@@ -34,7 +34,7 @@
     "node": ">=18"
   },
   "dependencies": {
-    "cz-git": "1.7.1",
+    "cz-git": "1.11.0",
     "czg": "1.10.0",
     "lint-staged": "^15.3.0",
     "log-symbols": "^7.0.0",
