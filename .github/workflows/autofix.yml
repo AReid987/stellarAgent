@@ -18,12 +18,7 @@ jobs:
       - name: Install pnpm
         uses: pnpm/action-setup@v4.0.0
         with:
-          version: latest
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4.1.1
-        with:
-          node-version: '22'
+          version: latest'
           cache: 'pnpm'
 
 
@@ -41,4 +36,5 @@ jobs:
       - name: Lint and Format
         run: pnpm turbo run lint:fix
         
-      - uses: autofix-ci/action@v1.3..1
+      - name: autofix.ci
+        uses: autofix-ci/action@v1.3.1
