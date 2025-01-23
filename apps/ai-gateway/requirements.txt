@@ -230,7 +230,7 @@ requests==2.32.3
     #   requests-sse
     #   stellar-sdk
     #   tiktoken
-requests-sse==0.3.2
+requests-sse==0.5.0
     # via stellar-sdk
 rich==13.9.4
     # via
