@@ -1,4 +1,4 @@
-from not_diamond.main import llm_providers
+from not_diamond import NotDiamond
 
 class NotDiamondClient:
     def __init__(self):
