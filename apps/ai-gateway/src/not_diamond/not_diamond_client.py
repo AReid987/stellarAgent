@@ -1,4 +1,4 @@
-from apps.ai_gateway.src.not_diamond.main import llm_providers
+from not_diamond.main import llm_providers
 
 class NotDiamondClient:
     def __init__(self):

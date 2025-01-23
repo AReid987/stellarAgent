@@ -1,7 +1,7 @@
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
-from src.portkey.portkey_client import PortkeyClient
-from apps.ai_gateway.src.not_diamond.not_diamond_client import NotDiamondClient
+from portkey.portkey_client import PortkeyClient
+from not_diamond.not_diamond_client import NotDiamondClient
 import os
 
 app = FastAPI(title="AI Gateway")
@@ -76,29 +76,23 @@ async def create_completion(request: PromptRequest):
             trace_id=request.trace_id,
         )
 
-        # Logic to call Not Diamond (replace with actual Not Diamond client call)
-        # For now, let's just return a placeholder response
+        # Return the response in a standardized format
         return {
             "choices": [
                 {
                     "message": {
                         "role": "assistant",
-                        "content": f"Response from Not Diamond for prompt: {request.prompt}",
+                        "content": response
                     }
                 }
             ]
         }
-        # Return the response in a standardized format
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
 
-def main():
-    # Use typer to start up the AI Gateway
-    # It should start a CLI interface for users to select initial options for the AI Gateway
-      
+def main():    
     print("AI Gateway initialized with Portkey client!")
   
-
 if __name__ == "__main__":
     main()

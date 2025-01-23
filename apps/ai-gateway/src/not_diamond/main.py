@@ -32,3 +32,10 @@ llm_providers = [
     "groq/mixtral-8x7b-32768",                        
     "groq/llama-3.2-3b-preview"                      
 ]
+
+# AI Based on these docs https://docs.notdiamond.ai/docs/model_select-vs-create
+# AI and the fact that I want to use a custom set of models not explicitly listed in the docs
+# AI it seems that I would need to use the `model_select` method to select the best model
+# AI i am not sure if we need a set of training data to use this method
+# AI this section of the docs also seem to be useful and relevant to the use case of this ai gateway https://docs.notdiamond.ai/docs/real-time-personalization
+# Write the plan, then the tests, then the code to pass the tests and satisfy the plan AI!

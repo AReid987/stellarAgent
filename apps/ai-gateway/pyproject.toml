@@ -20,6 +20,8 @@ dependencies = [
     "ruff>=0.9.2",
     "packaging>=24.2",
     "pytest-mock>=3.14.0",
+    "typer>=0.15.1",
+    "notdiamond>=0.3.35",
 ]
 name = "ai-gateway"
 version = "0.1.0"
