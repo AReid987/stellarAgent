@@ -3,6 +3,7 @@ from not_diamond.main import llm_providers
 class NotDiamondClient:
     def __init__(self):
         self.llm_providers = llm_providers
+        self.client = NotDiamond()
 
     def select_model(self, messages):
         """
@@ -14,5 +15,5 @@ class NotDiamondClient:
         Returns:
             str: The selected model provider.
         """
-        session_id, provider = client.chat.completions.model_select(messages=messages, model=self.llm_providers)
+        session_id, provider = self.client.chat.completions.model_select(messages=messages, model=self.llm_providers)
         return provider
