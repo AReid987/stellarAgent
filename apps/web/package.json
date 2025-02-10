@@ -1,9 +1,9 @@
 {
   "name": "@stellar-agent/web",
-"version": "0.1.0",
-"private": true,
-"type": "module",
-"scripts": {
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
@@ -21,7 +21,7 @@
   },
   "devDependencies": {
     "@babel/plugin-syntax-jsx": "^7.25.9",
-    "@babel/preset-env": "^7.26.0",
+    "@babel/preset-env": "^7.26.8",
     "@babel/preset-react": "^7.26.3",
     "@babel/preset-typescript": "^7.26.0",
     "@codecov/nextjs-webpack-plugin": "^1.6.0",
