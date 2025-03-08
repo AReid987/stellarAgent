@@ -240,7 +240,7 @@ inquirer==3.4.0
     # via open-interpreter
 ipykernel==6.29.5
     # via open-interpreter
-ipython==8.30.0
+ipython==8.34.0
     # via
     #   ipykernel
     #   ipywidgets
