@@ -117,7 +117,7 @@ jsonschema-specifications==2024.10.1
     # via jsonschema
 linkify-it-py==2.0.3
     # via markdown-it-py
-litellm==1.49.0
+litellm==1.63.12
     # via notdiamond
 markdown-it-py==3.0.0
     # via
