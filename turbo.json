@@ -60,7 +60,13 @@
         "$TURBO_DEFAULT$"
       ]
     },
-    "compile:deps": {
+    "uv:add": {
+      "cache": true,
+       "inputs": [
+        "$TURBO_DEFAULT$"
+      ]
+    },
+    "uv:compile": {
       "cache": true,
        "inputs": [
         "$TURBO_DEFAULT$",
@@ -70,12 +76,35 @@
         "**/requirements.txt"
       ]
     },
-     "install:deps": {
+    "uv:install": {
       "cache": true,
        "inputs": [
+        "$TURBO_DEFAULT$",
         "**/requirements.txt"
        ],
       "outputs": [
+        "**/.venv/**"
+       ]
+    },
+    "uv:install:upgrade": {
+      "cache": true,
+       "inputs": [
+        "$TURBO_DEFAULT$",
+        "**/requirements.txt"
+       ],
+      "outputs": [
+        "**/requirements.txt",
+        "**/.venv/**"
+      ]
+    },
+    "uv:compile:install": {
+      "cache": true,
+       "inputs": [
+        "$TURBO_DEFAULT$",
+        "pyproject.toml"
+      ],
+      "outputs": [
+        "**/requirements.txt",
         "**/.venv/**"
       ]
     },

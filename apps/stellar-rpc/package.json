@@ -2,7 +2,6 @@
   "name": "@stellar-agent/stellar-rpc",
   "version": "1.0.0",
   "scripts": {
-    "test": "echo 'TODO: Write Test' && exit 0"
   },
   "devDependencies": {
     "@stellar/stellar-sdk": "^13.1.0"

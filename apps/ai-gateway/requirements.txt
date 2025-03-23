@@ -49,6 +49,8 @@ click==8.1.8
     #   textual-dev
     #   typer
     #   uvicorn
+code2flow==2.5.1
+    # via ai-gateway (pyproject.toml)
 configparser==7.1.0
     # via aider
 coverage==7.6.10

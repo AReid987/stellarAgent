@@ -82,6 +82,11 @@ jobs:
       #   uses: EndBug/add-and-commit@a604fba70a846a0ea59e6040ef8a4a4f95015772
       # #
       # # End install-action snippet
+      
+      - name: Setup Testcontainers Cloud Client
+        uses: atomicjar/testcontainers-cloud-setup-action@v1
+        with:
+          token: "$TC_CLOUD_TOKEN"
 
       - name: Run tests with coverage
         run: |

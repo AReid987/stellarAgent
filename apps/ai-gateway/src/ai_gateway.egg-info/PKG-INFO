@@ -22,6 +22,7 @@ Requires-Dist: packaging>=24.2
 Requires-Dist: pytest-mock>=3.14.0
 Requires-Dist: typer>=0.15.1
 Requires-Dist: notdiamond>=0.3.35
+Requires-Dist: code2flow>=2.5.1
 
 # AI Gateway
 

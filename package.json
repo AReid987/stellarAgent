@@ -12,7 +12,12 @@
     "lint:fix": "turbo lint:fix",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "test": "turbo test",
-    "test:cov": "turbo test:cov"
+    "test:cov": "turbo test:cov",
+    "uv:add": "uv add",
+    "uv:compile": "uv pip compile pyproject.toml -o requirements.txt",
+    "uv:install": "uv pip install -r requirements.txt",
+    "uv:install:upgrade": "uv pip install -U` -r requirements.txt",
+    "uv:compile:install": "pnpm run uv:compile && pnpm run uv:install"
   },
   "config": {
     "commitizen": {
@@ -26,6 +31,7 @@
     "jest-junit": "^16.0.0",
     "lefthook": "^1.10.3",
     "prettier": "^3.4.2",
+    "testcontainers": "^10.17.1",
     "turbo": "^2.3.3",
     "typescript": "5.7.2"
   },
@@ -34,8 +40,10 @@
     "node": ">=18"
   },
   "dependencies": {
+    "code2flow": "0.0.1-alpha.0",
     "cz-git": "1.7.1",
     "czg": "1.10.0",
+    "dotenv-vault": "^1.26.2",
     "lint-staged": "^15.3.0",
     "log-symbols": "^7.0.0",
     "next": "^15.1.5",

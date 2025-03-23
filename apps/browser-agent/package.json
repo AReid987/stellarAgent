@@ -2,14 +2,14 @@
   "name": "@stellar-agent/browser-agent",
   "version": "1.0.0",
   "scripts": {
-    "test": "source .venv/bin/activate && pytest",
+    "test": "source .venv/bin/activate && PYTHONPATH=. pytest",
     "test:cov": "source .venv/bin/activate pytest --cov=. --cov-report=html",
     "lint": "ruff check . && ruff format --check",
-    "compile:deps": "source .venv/bin/activate && uv pip compile pyproject.toml -o requirements.txt",
-    "install:deps": "uv pip install -r requirements.txt",
-    "lint:fix": "ruff check --fix . && ruff format",
-    "dev:trigger": "pnpm dlx trigger.dev@latest dev",
-    "install:deps:compile": "pnpm run compile:deps && pnpm run install:deps",
+    "uv:add": "uv add",
+    "uv:compile": "uv pip compile pyproject.toml -o requirements.txt",
+    "uv:install": "uv pip install -r requirements.txt",
+    "uv:install:upgrade": "uv pip install -U` -r requirements.txt",
+    "uv:compile:install": "pnpm run uv:compile && pnpm run uv:install",
     "clean": "rm -rf .pytest_cache coverage .coverage"
   }
 }

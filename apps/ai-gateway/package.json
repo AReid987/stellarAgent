@@ -4,15 +4,10 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "test": "source .venv/bin/activate && pytest",
+    "test": "source .venv/bin/activate && PYTHONPATH=. pytest",
     "test:cov": "source .venv/bin/activate pytest --cov=. --cov-report=html",
     "lint": "ruff check . && ruff format --check",
     "dev": "uvicorn main:app --reload",
-    "compile:deps": "source .venv/bin/activate && uv pip compile pyproject.toml -o requirements.txt",
-    "install:deps": "uv pip install -r requirements.txt",
-    "lint:fix": "ruff check --fix . && ruff format",
-    "dev:trigger": "pnpm dlx trigger.dev@latest dev",
-    "install:deps:compile": "pnpm run compile:deps && pnpm run install:deps",
     "clean": "rm -rf .pytest_cache coverage .coverage"
   },
   "dependencies": {

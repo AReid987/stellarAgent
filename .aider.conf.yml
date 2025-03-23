@@ -44,7 +44,7 @@ model: openrouter/google/gemini-2.0-flash-thinking-exp-1219:free
 architect: true
 
 ## Specify the model to use for commit messages and chat history summarization (default depends on --model)
-weak-model: mistras/ministral-8b-latest
+weak-model: mistral/ministral-8b-latest
 
 # weak-model: cerebras/llama3.1-8b        
 # weak-model: mistral/open-mistral-nemo-2407

@@ -7,6 +7,7 @@ version = "0.1.0"
 source = { editable = "." }
 dependencies = [
     { name = "aider" },
+    { name = "code2flow" },
     { name = "fastapi", extra = ["standard"] },
     { name = "notdiamond" },
     { name = "packaging" },
@@ -29,6 +30,7 @@ dependencies = [
 [package.metadata]
 requires-dist = [
     { name = "aider" },
+    { name = "code2flow", specifier = ">=2.5.1" },
     { name = "fastapi", extras = ["standard"] },
     { name = "notdiamond", specifier = ">=0.3.35" },
     { name = "packaging", specifier = ">=24.2" },
@@ -279,6 +281,12 @@ sdist = { url = "https://files.pythonhosted.org/packages/b9/2e/0090cbf739cee7d23
 wheels = [
     { url = "https://files.pythonhosted.org/packages/7e/d4/7ebdbd03970677812aac39c869717059dbb71a4cfc033ca6e5221787892c/click-8.1.8-py3-none-any.whl", hash = "sha256:63c132bbbed01578a06712a2d1f497bb62d9c1c0d329b7903a866228027263b2", size = 98188 },
 ]
+
+[[package]]
+name = "code2flow"
+version = "2.5.1"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/3b/a5/d1a0d78f1d31d592131eed19c48839c17a842094a683242ec0d0a825830e/code2flow-2.5.1.tar.gz", hash = "sha256:ad98717920da6598dac38a1951f38b84891f4aa4bd2f36c119b0dbac729f4785", size = 313232 }
 
 [[package]]
 name = "colorama"

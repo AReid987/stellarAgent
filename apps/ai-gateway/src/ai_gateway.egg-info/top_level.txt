@@ -1,5 +1,4 @@
 __init__
 not_diamond
 portkey
-trigger
 tui
