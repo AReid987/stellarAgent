@@ -30,7 +30,7 @@ idna==3.10
     # via
     #   requests
     #   yarl
-mnemonic==0.20
+mnemonic==0.21
     # via stellar-sdk
 multidict==6.1.0
     # via
