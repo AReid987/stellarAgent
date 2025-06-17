@@ -53,7 +53,7 @@ requests==2.32.3
     # via
     #   requests-sse
     #   stellar-sdk
-requests-sse==0.3.2
+requests-sse==0.5.2
     # via stellar-sdk
 stellar-sdk==12.1.0
     # via stellar-rpc (pyproject.toml)
