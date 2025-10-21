@@ -4,7 +4,7 @@ aider==0.2.6
     # via ai-gateway (pyproject.toml)
 aiohappyeyeballs==2.4.4
     # via aiohttp
-aiohttp==3.11.11
+aiohttp==3.12.14
     # via
     #   aiohttp-jinja2
     #   litellm
