@@ -305,7 +305,7 @@ regex==2024.11.6
     # via
     #   dateparser
     #   tiktoken
-requests==2.32.3
+requests==2.32.4
     # via
     #   browser-use
     #   google-api-core
