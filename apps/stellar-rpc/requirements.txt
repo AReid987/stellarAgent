@@ -32,7 +32,7 @@ idna==3.10
     #   yarl
 mnemonic==0.20
     # via stellar-sdk
-multidict==6.1.0
+multidict==6.7.0
     # via
     #   aiohttp
     #   aiohttp-sse-client
