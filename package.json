@@ -42,7 +42,7 @@
   "dependencies": {
     "code2flow": "0.0.1-alpha.0",
     "cz-git": "1.7.1",
-    "czg": "1.10.0",
+    "czg": "1.12.0",
     "dotenv-vault": "^1.26.2",
     "lint-staged": "^15.3.0",
     "log-symbols": "^7.0.0",
