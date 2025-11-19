@@ -138,7 +138,7 @@ monotonic==1.6
     # via posthog
 msgpack==1.1.0
     # via textual-dev
-multidict==6.1.0
+multidict==6.7.0
     # via
     #   aiohttp
     #   yarl
