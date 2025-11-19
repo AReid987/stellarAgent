@@ -1,5 +1,5 @@
 # Stage 1: Build
-FROM python:3.12-slim AS builder
+FROM python:3.14-slim AS builder
 ENV TURBO_TOKEN=$TURBO_TOKEN
 ENV TURBO_TEAM=$TURBO_TEAM
 # Prevents Python from writing pyc files.
@@ -23,7 +23,7 @@ RUN --mount=type=cache,target=/root/.cache/pip \
 COPY . .
 
 # Stage 2: Runtime
-FROM python:3.12-alpine
+FROM python:3.14-alpine
 
 
 # Copy only the required files from the build stage.
