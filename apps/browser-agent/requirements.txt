@@ -163,7 +163,7 @@ langchain-anthropic==0.3.3
     # via browser-use
 langchain-aws==0.2.11
     # via browser-use
-langchain-core==0.3.30
+langchain-core==0.3.80
     # via
     #   langchain
     #   langchain-anthropic
