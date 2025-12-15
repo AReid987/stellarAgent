@@ -132,7 +132,7 @@ mdit-py-plugins==0.4.2
     # via markdown-it-py
 mdurl==0.1.2
     # via markdown-it-py
-mnemonic==0.20
+mnemonic==0.21
     # via stellar-sdk
 monotonic==1.6
     # via posthog
