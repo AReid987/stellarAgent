@@ -2,7 +2,7 @@
 #    uv pip compile pyproject.toml -o requirements.txt
 aiohappyeyeballs==2.4.4
     # via aiohttp
-aiohttp==3.12.14
+aiohttp==3.13.3
     # via
     #   langchain
     #   langchain-fireworks
@@ -35,7 +35,7 @@ botocore==1.36.2
     # via
     #   boto3
     #   s3transfer
-browser-use==0.1.23
+browser-use==0.1.45
     # via browser-agent (pyproject.toml)
 cached-property==2.0.1
     # via portkey-ai
@@ -103,7 +103,7 @@ grpcio==1.69.0
     #   grpcio-status
 grpcio-status==1.69.0
     # via google-api-core
-h11==0.14.0
+h11==0.16.0
     # via
     #   httpcore
     #   wsproto
@@ -163,7 +163,7 @@ langchain-anthropic==0.3.3
     # via browser-use
 langchain-aws==0.2.11
     # via browser-use
-langchain-core==0.3.30
+langchain-core==0.3.81
     # via
     #   langchain
     #   langchain-anthropic
@@ -180,7 +180,7 @@ langchain-openai==0.2.14
     # via
     #   browser-agent (pyproject.toml)
     #   browser-use
-langchain-text-splitters==0.3.5
+langchain-text-splitters==0.3.9
     # via langchain
 langsmith==0.2.11
     # via
@@ -241,7 +241,7 @@ proto-plus==1.25.0
     # via
     #   google-ai-generativelanguage
     #   google-api-core
-protobuf==5.29.3
+protobuf==5.29.5
     # via
     #   google-ai-generativelanguage
     #   google-api-core
@@ -253,7 +253,7 @@ psutil==6.1.1
     # via mirakuru
 psycopg==3.2.4
     # via pytest-postgresql
-pyasn1==0.6.1
+pyasn1==0.6.2
     # via
     #   pyasn1-modules
     #   rsa
@@ -305,7 +305,7 @@ regex==2024.11.6
     # via
     #   dateparser
     #   tiktoken
-requests==2.32.3
+requests==2.32.4
     # via
     #   browser-use
     #   google-api-core
@@ -373,7 +373,7 @@ tzlocal==5.2
     # via dateparser
 uritemplate==4.1.1
     # via google-api-python-client
-urllib3==2.3.0
+urllib3==2.6.3
     # via
     #   botocore
     #   courlan
