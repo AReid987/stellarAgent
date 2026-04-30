@@ -212,7 +212,7 @@ openai==1.59.8
     # via
     #   langchain-fireworks
     #   langchain-openai
-orjson==3.10.15
+orjson==3.11.6
     # via langsmith
 packaging==24.2
     # via
