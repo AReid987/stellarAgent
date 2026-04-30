@@ -67,7 +67,7 @@ fastapi==0.115.6
     # via ai-gateway (pyproject.toml)
 fastapi-cli==0.0.7
     # via fastapi
-filelock==3.17.0
+filelock==3.20.3
     # via huggingface-hub
 frozenlist==1.5.0
     # via
