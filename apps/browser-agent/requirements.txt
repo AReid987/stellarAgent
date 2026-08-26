@@ -335,7 +335,7 @@ sniffio==1.3.1
     #   anyio
     #   openai
     #   portkey-ai
-soupsieve==2.6
+soupsieve==2.8.4
     # via beautifulsoup4
 sqlalchemy==2.0.37
     # via langchain
