@@ -136,7 +136,7 @@ mnemonic==0.20
     # via stellar-sdk
 monotonic==1.6
     # via posthog
-msgpack==1.1.0
+msgpack==1.2.1
     # via textual-dev
 multidict==6.1.0
     # via
