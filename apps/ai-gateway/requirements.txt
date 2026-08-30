@@ -203,7 +203,7 @@ python-dateutil==2.9.0.post0
     # via
     #   pandas
     #   posthog
-python-dotenv==1.0.1
+python-dotenv==1.2.2
     # via
     #   ai-gateway (pyproject.toml)
     #   litellm
