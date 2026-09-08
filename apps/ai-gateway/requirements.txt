@@ -209,7 +209,7 @@ python-dotenv==1.0.1
     #   litellm
     #   notdiamond
     #   uvicorn
-python-multipart==0.0.20
+python-multipart==0.0.31
     # via fastapi
 pytz==2024.2
     # via pandas
