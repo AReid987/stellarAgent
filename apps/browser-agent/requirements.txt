@@ -219,7 +219,7 @@ packaging==24.2
     #   browser-agent (pyproject.toml)
     #   langchain-core
     #   pytest
-pillow==11.1.0
+pillow==12.3.0
     # via fireworks-ai
 playwright==1.49.1
     # via
