@@ -182,7 +182,7 @@ langchain-openai==0.2.14
     #   browser-use
 langchain-text-splitters==0.3.5
     # via langchain
-langsmith==0.2.11
+langsmith==0.8.18
     # via
     #   langchain
     #   langchain-core
