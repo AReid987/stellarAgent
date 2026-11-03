@@ -159,7 +159,7 @@ langchain==0.3.14
     # via
     #   browser-agent (pyproject.toml)
     #   browser-use
-langchain-anthropic==0.3.3
+langchain-anthropic==1.4.6
     # via browser-use
 langchain-aws==0.2.11
     # via browser-use
