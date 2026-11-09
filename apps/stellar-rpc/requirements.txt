@@ -16,7 +16,7 @@ attrs==24.3.0
     # via
     #   aiohttp
     #   aiohttp-sse-client
-certifi==2024.12.14
+certifi==2026.10.18
     # via requests
 cffi==1.17.1
     # via pynacl

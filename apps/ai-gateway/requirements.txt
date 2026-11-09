@@ -33,7 +33,7 @@ backoff==2.2.1
     # via posthog
 cached-property==2.0.1
     # via portkey-ai
-certifi==2024.12.14
+certifi==2026.10.18
     # via
     #   httpcore
     #   httpx
